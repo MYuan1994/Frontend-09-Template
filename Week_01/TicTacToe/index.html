@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+</head>
+<link rel="stylesheet" href="./css/checkerBoard.css"></link>
+
+<body>
+    <div id="menu">
+        <button onclick="reset()">RESET</button>
+    </div>
+    <br>
+    <div class="checkerBoard">
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</body>
+<script src="./js/operate.js"></script>
+<script src="./js/AI.js"></script>
+<script>
+    let state;
+    let player;
+
+    // let chess = ["", "❌", "⭕"];
+    let chess = ["", "SpongeBobSquarePants", "PatrickStar"];
+
+    let board = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+    var proxy = new Proxy(board, {
+        set: function(target, key, value, receiver) {
+            if (state === "init") {
+                // let i = Math.floor(key / 3) + 1;
+                // let j = (key % 3) + 1;
+                // console.log(`${player}点击第${i}行第${j}列的格子`);
+
+                // document.getElementsByTagName("span")[key].innerHTML = chess[value];
+                document.getElementsByTagName("span")[key].innerHTML = "";
+                if (chess[value] !== "") {
+                    let chessTemp = document.createElement("img");
+                    chessTemp.src = `./img/HMBB/${chess[value]}.gif`;
+                    document.getElementsByTagName("span")[key].append(chessTemp);
+                }
+                target[key] = value;
+                return true;
+            }
+        },
+        get: function(target, key, receiver) {
+            return target[key];
+        }
+    });
+    window.onload = () => {
+        initCheckerBoard();
+    }
+</script>
+
+</html>

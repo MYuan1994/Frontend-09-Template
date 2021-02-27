@@ -1,0 +1,34 @@
+:root {
+    --init: #275293;
+    --win: url(./../img/HMBB/win.gif);
+    --lose: url(./../img/HMBB/lose.gif);
+    --tie: url(./../img/HMBB/tie.gif);
+    --state: var(--init);
+}
+
+.checkerBoard {
+    width: 600px;
+    height: 600px;
+    padding: 8px;
+    background: var(--state);
+    background-clip: padding-box;
+    background-size: 100% 100%;
+    user-select: none;
+}
+
+.checkerBoard>div {
+    width: 600px;
+    height: 196px;
+    margin-bottom: 4px;
+}
+
+.checkerBoard div>span {
+    float: left;
+    margin-left: 4px;
+    width: 196px;
+    height: 196px;
+    background: #5dacd28c;
+    font-size: 135px;
+    text-align: center;
+    cursor: pointer;
+}
