@@ -1,0 +1,100 @@
+:root {
+    --Map_Width: 15;
+    --Map_Height: 15;
+}
+
+#tool {
+    width: 100%;
+    position: fixed;
+    height: 25px;
+    box-shadow: #AAA 1px 1px 2px;
+    background: #FFF;
+    top: 6px;
+    padding: 5px;
+    z-index: 66;
+}
+
+#tool>div {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+#start {
+    width: 40px;
+    height: 20px;
+    display: inline;
+    position: fixed;
+    background: #13a2df;
+    top: 55px;
+    left: 0;
+    color: #FFF;
+    padding: 4px;
+}
+
+#end {
+    width: 40px;
+    height: 20px;
+    display: inline;
+    position: fixed;
+    display: inline;
+    position: fixed;
+    background: #0fe77b;
+    top: 88px;
+    left: 0;
+    color: #FFF;
+    padding: 4px;
+}
+
+#mapBox {
+    width: 900px;
+    height: 100%;
+    min-height: 600px;
+    overflow: auto;
+    padding: 16px 66px;
+    margin-top: 40px;
+}
+
+.mapBox>div {
+    height: 7px;
+    line-height: 3px;
+}
+
+
+/* .mapBox>div:nth-last-child(1) {
+    border-bottom: 1px solid #AAA;
+} */
+
+span {
+    width: 6px;
+    height: 6px;
+    border-left: 1px #FFF solid;
+    border-top: 1px #FFF solid;
+    display: inline-block;
+    background: #DDD;
+}
+
+span:hover {
+    background: #CCC;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    width: 14px;
+    background-color: #0c719d4d;
+    height: 50px;
+    border-radius: 14px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    background-color: #39b9b64d;
+}
+
+ ::-webkit-scrollbar-track {
+    border-radius: 1em;
+    background-color: #fff0;
+}

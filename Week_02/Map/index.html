@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<link rel="stylesheet" href="./css/map.css">
+
+<body>
+    <div id="tool">
+        <div>
+            <label>地图尺寸：</label>
+            <input id="xLine" type="number" size="3" maxlength="3" min="10" max="150" value="100"> *
+            <input id="yLine" type="number" size="3" maxlength="2" min="10" max="150" value="100">
+            <button id="init">初始化</button>
+            <button onclick="clearFootPrint()">抹除足迹</button>
+        </div>
+        <div>
+            <!-- <select id="mapList"></select>
+            <button onclick="loadData()">加载</button> -->
+            <button onclick="BFS()">广度优先</button>
+            <button onclick="AStar()">启发式搜索A*</button>
+            <button onclick="AStarHeap()">选做—启发式搜索A*(Heap)</button>
+            <label>说明：离开页面或者刷新会自动保存，双击添加起点、终点</label>
+        </div>
+    </div>
+    <div id="start">起点</div>
+    <div id="end">终点</div>
+    <div id="mapBox" class="mapBox">
+
+    </div>
+</body>
+<script src="./js/initMap.js"></script>
+<script src="./js/BreadthFirstSearch.js"></script>
+<script src="./js/Astar_Heap.js"></script>
+<script src="./js/Astar_sorted.js"></script>
+<script>
+    document.getElementById("init").addEventListener("click", () => {
+        curWidth = document.getElementById("xLine").value;
+        curHeight = document.getElementById("yLine").value;
+        mapData = Array(curWidth * curHeight).fill(0);
+        initMap(curWidth, curHeight);
+        bind();
+    });
+    document.addEventListener("mousedown", (event) => {
+        operType = event.which;
+        if (3 === event.which) {
+            event.stopPropagation();
+        }
+    });
+    document.addEventListener("mouseup", () => {
+        operType = 0;
+    });
+
+    document.addEventListener("contextmenu", (event) => {
+        event.stopPropagation();
+    });
+
+    window.onbeforeunload = () => {
+        localStorage.setItem("mapDataTemp", JSON.stringify(mapData));
+        localStorage.setItem("mapWidth", curWidth);
+        localStorage.setItem("mapHeight", curHeight);
+    };
+
+    window.onload = () => {
+        curWidth = localStorage.getItem("mapWidth") ? localStorage.getItem("mapWidth") : 100;
+        curHeight = localStorage.getItem("mapHeight") ? localStorage.getItem("mapHeight") : 100;
+        document.getElementById("xLine").value = curWidth;
+        document.getElementById("xLine").value = curHeight;
+        mapData = localStorage.getItem("mapDataTemp") ? JSON.parse(localStorage.getItem("mapDataTemp")) : Array(curWidth * curHeight).fill(0);
+        initMap(curWidth, curHeight);
+        bind();
+    }
+</script>
+
+</html>
