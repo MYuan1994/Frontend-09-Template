@@ -17,9 +17,11 @@ class MinHeap {
         let min = this.data[0];
         let minIndex = 0;
         while (minIndex < this.data.length) {
+            //左叶子节点超出
             if (this.leftChild(minIndex) >= this.data.length) {
                 break;
             }
+            //右叶子节点超出
             if (this.rightChild(minIndex) >= this.data.length) {
                 this.data[minIndex] = this.data[this.leftChild(minIndex)];
                 minIndex = this.leftChild(minIndex);
@@ -43,6 +45,10 @@ class MinHeap {
     }
     give(value) {
         this.siftDown(this.data.length, value);
+    }
+    
+    giveMax(value) {
+        this.siftUp(this.data.length, value);
     }
 
     //下沉
