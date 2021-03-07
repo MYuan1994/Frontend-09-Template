@@ -91,8 +91,6 @@ let AStarHeap = () => {
 //另：四向可走：使用曼哈顿距离
 async function pathAH(data, start, end) {
     let footPrint = data.slice();
-    // let footPrint = Array(curWidth * curHeight).fill(0);
-    // let feetCount = Array(curWidth * curHeight).fill(0);
     let feetCount = Array(curWidth * curHeight).fill(1.7976931348623157E+10308);
     var queue = new MinHeap([start], (a, b) => distance(a) - distance(b));
 
