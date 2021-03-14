@@ -15,13 +15,19 @@
         </div>
         <div>
             <textarea name="sourceOutput" id="sourceOutput" cols="30" rows="15" disabled style="width: 70%;min-width: 500px;"></textarea>
+            <div id="ExpressionTree" style="width: 500px;height: 500px;"></div>
         </div>
     </div>
 </body>
+<script src="./js/echarts.min.js"></script>
 <script src="./js/lexer.js"></script>
 <script src="./js/syntax.js"></script>
 <script>
     let result;
+
+    var chartDom = document.getElementById('ExpressionTree');
+    var myChart = echarts.init(chartDom);
+
     let changeToAST = () => {
         let sourceT = document.getElementById("sourceInput").value;
         let sourceS = [];
@@ -34,7 +40,66 @@
         result = Expression(sourceS)
         document.getElementById("sourceOutput").value = JSON.stringify(result);
         console.log(result);
-    }
+        drawTree(result);
+    };
+
+
+
+    let drawTree = (data) => {
+        let dataStr = JSON.stringify(data).replace(/type/g, "name");
+        data = JSON.parse(dataStr);
+
+
+
+        myChart.setOption(option = {
+            tooltip: {
+                trigger: 'item',
+                triggerOn: 'mousemove'
+            },
+            series: [{
+                type: 'tree',
+
+                data: [data],
+
+                top: '1%',
+                left: '7%',
+                bottom: '1%',
+                right: '20%',
+
+                symbolSize: 7,
+
+                label: {
+                    position: 'left',
+                    verticalAlign: 'middle',
+                    align: 'right',
+                    fontSize: 9
+                },
+
+                leaves: {
+                    label: {
+                        position: 'right',
+                        verticalAlign: 'middle',
+                        align: 'left'
+                    }
+                },
+
+                emphasis: {
+                    focus: 'descendant'
+                },
+
+                expandAndCollapse: true,
+                animationDuration: 550,
+                animationDurationUpdate: 750
+            }]
+        });
+
+    };
+</script>
+<script>
+    // import * as echarts from 'echarts';
+    // const echarts = require('echarts/lib/echarts');
+    // require('echarts/lib/component/tooltip');
+    // require('echarts/lib/chart/tree');
 </script>
 
 </html>
