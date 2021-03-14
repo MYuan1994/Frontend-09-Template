@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <button onclick="changeToAST()">转义为AST</button>
+        <div>
+            <textarea name="sourceInput" id="sourceInput" cols="30" rows="15" style="width: 70%;min-width: 500px;"></textarea>
+        </div>
+        <div>
+            <textarea name="sourceOutput" id="sourceOutput" cols="30" rows="15" disabled style="width: 70%;min-width: 500px;"></textarea>
+        </div>
+    </div>
+</body>
+<script src="./js/lexer.js"></script>
+<script src="./js/syntax.js"></script>
+<script>
+    let result;
+    let changeToAST = () => {
+        let sourceT = document.getElementById("sourceInput").value;
+        let sourceS = [];
+        for (let token of tokenize(sourceT)) {
+            console.log(token);
+            if (token.type !== "Whitespace" && token.type !== "LineTerminator") {
+                sourceS.push(token);
+            }
+        };
+        result = Expression(sourceS)
+        document.getElementById("sourceOutput").value = JSON.stringify(result);
+        console.log(result);
+    }
+</script>
+
+</html>
