@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StringHandle</title>
+</head>
+<style>
+    body {
+        user-select: none;
+    }
+</style>
+
+<body>
+    <div>
+        <div>实现课程内容的方法名称为：</div>
+        <div>字典树：&nbsp;&nbsp;&nbsp;class->Trie,function-><span contenteditable="true">findMost()</span>（下方实现搜索建议associate(keyword),搜除自身最高频的8个串）</div>
+        <div>KMP：&nbsp;&nbsp;&nbsp;<span contenteditable="true">KMP(source, pattern)</span>（下方实现字符串输入匹配---其实没啥用）</div>
+        <div>windCard：&nbsp;&nbsp;&nbsp;<span contenteditable="true">windCardFind(source, pattern)</span></div>
+        <div>选做windCard+KMP：&nbsp;&nbsp;&nbsp;<span contenteditable="true">windCardFind_KMP(source, pattern)</span></div>
+    </div>
+
+    <br>
+    <hr><br>
+    <div>
+        <label for="search_I" title="假设随机生成的字符串为以往搜索历史，利用associate匹配搜索内容的联想，取最高频的8个添加至datalist">搜索建议</label>
+        <input id="search_I" list="historyData" type="text">
+        <datalist id="historyData"></datalist>
+    </div>
+    <br>
+    <hr><br>
+    <div>
+        <label for="match_D" title="搜索模式串">匹配模式串</label><button onclick="stratKMP()">Match</button>
+        <br><br>
+        <span id="match_P" title="模式串" contenteditable="true" style="min-width: 200px;height: 20px;border-bottom:2px dotted #AAA ;display: inline-block;">aabaaac</span>
+        <span>======></span></span>
+        <span id="match_S" title="源字符串" contenteditable="true" style="min-width: 200px;height: 20px;border-bottom:2px dotted #AAA ;display: inline-block;">tyhfjrgaabaaacfdasdhqwedhdaaabaaacdfasd</span>
+    </div>
+
+
+</body>
+<script src="./js/Trie.js"></script>
+<script src="./js/KMP.js"></script>
+<script src="./js/WildCard.js"></script>
+<script src="./js/WildCard_KMP.js"></script>
+<script>
+    document.getElementById("search_I").addEventListener("input", (event) => {
+        if (event.currentTarget.value != null && event.currentTarget.value != "") {
+            let dataList = document.getElementById("historyData");
+            dataList.innerHTML = '';
+            for (let item of trie.associate(event.currentTarget.value)) {
+                let optionTemp = document.createElement("option");
+                optionTemp.value = item.word;
+                dataList.append(optionTemp);
+            }
+        }
+    });
+
+    let stratKMP = () => {
+        let sourceStr = document.getElementById("match_S").innerText;
+        let patternStr = document.getElementById("match_P").innerText;
+        let resultList = KMP(sourceStr, patternStr);
+        let result = [];
+        if (resultList.length > 0) {
+            let start = 0;
+            for (let index in resultList) {
+                result.push(`第${resultList[index] - patternStr.length+1}—${resultList[index]}位`);
+            }
+        }
+        // alert(sourceStr.replaceAll(patternStr, "(" + patternStr + ")"));
+        alert(result);
+    }
+</script>
+
+</html>
