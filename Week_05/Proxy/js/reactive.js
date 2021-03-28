@@ -147,10 +147,3 @@ document.getElementById("colorLine").addEventListener("input", (ev) => {
 
 })
 
-
-effect(() => {
-    // console.log(objProxy.experience.high);
-})
-effect(() => {
-    // console.log(objProxy.experience.high);
-})
