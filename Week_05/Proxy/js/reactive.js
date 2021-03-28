@@ -76,7 +76,7 @@ let objTest = {
     r: 22,
     g: 22,
     b: 22,
-    color: 0
+    a: 10
 }
 
 let objProxy = reactive(objTest);
@@ -85,8 +85,10 @@ effect(() => {
     document.getElementById("R").value = objProxy.r;
     document.getElementById("G").value = objProxy.g;
     document.getElementById("B").value = objProxy.b;
+    document.getElementById("opacity").value = objProxy.a;
 
-    document.getElementById("displayDiv").style.background = `rgb(${objProxy.r},${objProxy.g},${objProxy.b})`;
+    document.getElementById("displayDiv").style.background = `rgb(${objProxy.r},${objProxy.g},${objProxy.b},${objProxy.a/100})`;
+
 })
 
 document.getElementById("R").addEventListener("input", (ev) => {
@@ -97,6 +99,52 @@ document.getElementById("G").addEventListener("input", (ev) => {
 })
 document.getElementById("B").addEventListener("input", (ev) => {
     objProxy.b = ev.target.value;
+})
+document.getElementById("opacity").addEventListener("input", (ev) => {
+    objProxy.a = ev.target.value;
+})
+
+document.getElementById("colorLine").addEventListener("input", (ev) => {
+
+    switch (parseInt(ev.target.value / 256)) {
+        case 0:
+            objProxy.r = 255;
+            objProxy.g = 0;
+            objProxy.b = ev.target.value % 256;
+            break;
+        case 1:
+            objProxy.r = 255 - ev.target.value % 256;
+            objProxy.g = 0;
+            objProxy.b = 255;
+            break;
+        case 2:
+            objProxy.r = 0;
+            objProxy.g = ev.target.value % 256;
+            objProxy.b = 255;
+            break;
+        case 3:
+            objProxy.r = 0;
+            objProxy.g = 255;
+            objProxy.b = 255 - ev.target.value % 256;
+            break;
+        case 4:
+            objProxy.r = ev.target.value % 256;
+            objProxy.g = 255;
+            objProxy.b = 0;
+            break;
+        case 5:
+            objProxy.r = 255;
+            objProxy.g = 255 - ev.target.value % 256;
+            objProxy.b = 0;
+            break;
+        case 6:
+            objProxy.r = 255;
+            objProxy.g = 0;
+            objProxy.b = 0;
+            break;
+    }
+
+
 })
 
 
