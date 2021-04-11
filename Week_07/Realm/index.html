@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realm</title>
+</head>
+<style>
+  #container{
+    width: calc(100vh - 30px);
+    height: calc(100vh - 30px);
+  }
+</style>
+<body>
+
+    <label for="dataMount"> ECMA-262内置对象(built-in object):独立于宿主环境的ECMAScript实现提供的对象</label>
+    <div id="dataMount"></div>
+    <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects">MDN地址</a>
+</body>
+<!-- <script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.g6-3.1.0/build/g6.js"></script> -->
+<script src="./js/g6.js"></script>
+<script>
+  window.onload=()=>{
+    
+    fetch('./data/realm.json')
+      .then((res) => res.json())
+      .then((data) => {
+        const container = document.getElementById('dataMount');
+        const width = container.scrollWidth|| 666;
+        const height = container.scrollHeight || 666;
+        const graph = new G6.TreeGraph({
+          container: 'dataMount',
+          width,
+          height,
+          linkCenter: true,
+          modes: {
+            default: [
+              {
+                type: 'collapse-expand',
+                onChange: function onChange(item, collapsed) {
+                  const data = item.get('model');
+                  data.collapsed = collapsed;
+                  return true;
+                },
+              },
+              'drag-canvas',
+              'zoom-canvas',
+            ],
+          },
+          defaultNode: {
+            size: 26,
+          },
+          layout: {
+            type: 'dendrogram',
+            direction: 'LR',
+            nodeSep: 20,
+            rankSep: 100,
+            radial: true,
+          },
+        });
+
+        graph.node(function (node) {
+          return {
+            label: node.id,
+          };
+        });
+
+        graph.data(data);
+        graph.render();
+        graph.fitView();
+
+        if (typeof window !== 'undefined')
+          window.onresize = () => {
+            if (!graph || graph.get('destroyed')) return;
+            if (!container || !container.scrollWidth || !container.scrollHeight) return;
+            graph.changeSize(container.scrollWidth, container.scrollHeight);
+          };
+      });
+
+      }
+</script>
+</html>
