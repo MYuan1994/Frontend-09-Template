@@ -28,7 +28,7 @@
             "id":"uneval()"
           },
           {
-            "id":"uneval()"
+            "id":"isFinite()"
           },
           {
             "id":"isNaN()"
@@ -266,7 +266,7 @@
         ]
       },
       {
-        "id": "WebAssembly",
+        "id": "WebAssembly对象",
         "children": [
           {
             "id":"WebAssembly"
