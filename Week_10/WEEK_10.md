@@ -60,7 +60,7 @@
 
 采用 Flex 布局的元素，称为 Flex 容器（flex container），简称`"容器"`。它的所有子元素自动成为容器成员，称为 Flex 项目（flex item），简称`"项目"`。
 
-![](C:\Users\ASUS-PC\Desktop\DOC\GEEK\img\flex_01.png)
+![](https://github.com/MYuan1994/Frontend-09-Template/tree/main/Week_10/img/flex_01.png)
 
 容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做`main start`，结束位置叫做`main end`；交叉轴的开始位置叫做`cross start`，结束位置叫做`cross end`。
 
