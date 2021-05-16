@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATCH</title>
+</head>
+<body>
+    <div id="AA">
+        <span class="clc cls" title="cc" id="ZMY"></span>
+        <span class="clc cls" title="cc" id="ZMY2"></span>
+    </div>
+</body>
+<script>
+    // 拆分复杂选择器为复合选择器
+let AnalysisSelector = (selectorStr) => {
+    let selectorList = [];
+    let StrTemp = "";
+    for (let c of selectorStr){
+        if (/[ +~>]/g.test(c)) {
+            selectorList.unshift({ type: c, selector: StrTemp });
+            StrTemp = "";
+        } else {
+            StrTemp += c;
+        }
+    }
+    selectorList.unshift({ type: "self", selector: StrTemp });
+    return selectorList;
+}
+// 匹配复合选择器与元素
+
+// 未处理伪类伪元素
+// 逻辑型伪类可处理
+let matchItem=(selectors,element)=>{
+    let list = selectors.split(/(?=[.#:\[])/g);
+    for (selector of list){
+        if (/#/.test(selector)) {
+            if(selector.slice(1)!==element.id){return false}
+        } else if (/./.test(selector)) {
+            if(element.classList.contains(selector.slice(1))===-1){return false}
+        } else if (/\[/.test(selector)) {
+            let KV = selector.slice(1, -1).split("=");
+            if (KV.length > 1) {
+                if (!(element[KV[0]]===KV[1])) {return false;}
+            } else { 
+                if (!element[KV[0]]) {return false;}
+            }
+        } else if (/::/.test(selector)) {
+
+        } else if (/:/.test(selector)) {
+
+        } else { 
+            if(selector.slice(1)!==element.tagName){return false}
+        }
+    }
+    return true;
+}
+
+let findParent = (selector, element) => {
+    if (matchItem(selector, element)) {
+        return element;
+    } else if(element.tagName==="html"){ 
+        return null;
+    } else {
+        element = element.parentElement;
+        findParent(selector, element);
+    }
+}
+
+function match(selector, element) {
+
+    let selectorList = AnalysisSelector(selector);
+    console.log(selectorList);
+
+    var tempElement = element;
+
+    for (let selector of selectorList) {
+
+        if (selector.type === "self") {
+            
+        } else if (selector.type === ">") {
+            tempElement = tempElement.parentElement;
+        } else if (selector.type === "~") {
+            tempElement = tempElement.previousElementSibling;
+        } else if (selector.type === "+") {
+            tempElement = tempElement.nextElementSibling;
+        } else {
+            tempElement = tempElement.parentElement;
+            tempElement = findParent(selector.selector,tempElement)
+        }
+        if (tempElement===null) {
+            console.log("失败，到头了");
+            return "fail";
+        }
+
+        if (!matchItem(selector.selector, tempElement)) {
+            console.log("失败");
+            return "fail";
+        }
+    }
+
+    console.log("成功");
+    return "succ";
+}
+
+
+
+
+match("div #ZMY.clc", document.getElementById("ZMY"));
+match("#ZMY.clc[title='cc']~#ZMY2.clc[title='cc']", document.getElementById("ZMY2"));
+</script>
+</html>
