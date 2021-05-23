@@ -1,0 +1,1372 @@
+[
+  {
+    "name": "align-content",
+    "definition": "The CSS align-content property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.",
+    "html": "The <a href=\"/en-US/docs/Web/CSS\">CSS</a> <strong><code>align-content</code></strong> property sets the distribution of space between and around content items along a <a href=\"/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout\">flexbox</a>'s cross-axis or a <a href=\"/en-US/docs/Web/CSS/CSS_Grid_Layout\">grid</a>'s block axis."
+  },
+  {
+    "name": "align-items",
+    "definition": "The CSS align-items property sets the align-self value on all direct children as a group. In Flexbox, it controls the alignment of items on the Cross Axis. In Grid Layout, it controls the alignment of items on the Block Axis within their grid area.",
+    "html": "<span class=\"seoSummary\">The <a href=\"/en-US/docs/Web/CSS\">CSS</a> <strong><code>align-items</code></strong> property sets the <a href=\"/en-US/docs/Web/CSS/align-self\"><code>align-self</code></a> value on all direct children as a group.</span> In Flexbox, it controls the alignment of items on the <a href=\"/en-US/docs/Glossary/Cross_Axis\">Cross Axis</a>. In Grid Layout, it controls the alignment of items on the Block Axis within their <a href=\"/en-US/docs/Glossary/Grid_Areas\">grid area</a>."
+  },
+  {
+    "name": "align-self",
+    "definition": "The align-self CSS property overrides a grid or flex item's align-items value. In Grid, it aligns the item inside the grid area. In Flexbox, it aligns the item on the cross axis.",
+    "html": "The <strong><code>align-self</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property overrides a grid or flex item's <a href=\"/en-US/docs/Web/CSS/align-items\"><code>align-items</code></a> value. In Grid, it aligns the item inside the&nbsp;<a href=\"/en-US/docs/Glossary/Grid_Areas\">grid area</a>. In Flexbox, it aligns the item on the <a href=\"/en-US/docs/Glossary/Cross_Axis\">cross axis</a>."
+  },
+  {
+    "name": "all",
+    "definition": "The all shorthand CSS property resets all of an element's properties except unicode-bidi, direction, and CSS Custom Properties. It can set properties to their initial or inherited values, or to the values specified in another stylesheet origin.",
+    "html": "<span class=\"seoSummary\">The <code><strong>all</strong></code> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand</a> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property resets all of an element's properties except <a href=\"/en-US/docs/Web/CSS/unicode-bidi\"><code>unicode-bidi</code></a>, <a href=\"/en-US/docs/Web/CSS/direction\"><code>direction</code></a>, and <a href=\"/en-US/docs/Web/CSS/Using_CSS_custom_properties\">CSS Custom Properties</a>.</span> It can set properties to their initial or inherited values, or to the values specified in another stylesheet origin."
+  },
+  {
+    "name": "animation-delay",
+    "definition": "The animation-delay CSS property specifies the amount of time to wait from applying the animation to an element before beginning to perform the animation. The animation can start later, immediately from its beginning, or immediately and partway through the animation.",
+    "html": "<span class=\"seoSummary\">The <strong><code>animation-delay</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property specifies the amount of time to wait from applying the animation to an element before beginning to perform the animation.</span> The animation can start later, immediately from its beginning, or immediately and partway through the animation."
+  },
+  {
+    "name": "animation-direction",
+    "definition": "The animation-direction CSS property sets whether an animation should play forward, backward, or alternate back and forth between playing the sequence forward and backward.",
+    "html": "The <strong><code>animation-direction</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets whether an animation should play forward, backward, or alternate back and forth between playing the sequence forward and backward."
+  },
+  {
+    "name": "animation-duration",
+    "definition": "The animation-duration CSS property sets the length of time that an animation takes to complete one cycle.",
+    "html": "The <strong><code>animation-duration</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the length of time that an animation takes to complete one cycle."
+  },
+  {
+    "name": "animation-fill-mode",
+    "definition": "The animation-fill-mode CSS property sets how a CSS animation applies styles to its target before and after its execution.",
+    "html": "The <strong><code>animation-fill-mode</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets how a CSS animation applies styles to its target before and after its execution."
+  },
+  {
+    "name": "animation-iteration-count",
+    "definition": "The animation-iteration-count CSS property sets the number of times an animation sequence should be played before stopping.",
+    "html": "The <strong><code>animation-iteration-count</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the number of times an animation sequence should be played before stopping."
+  },
+  {
+    "name": "animation-name",
+    "definition": "The animation-name CSS property specifies the names of one or more @keyframes at-rules describing the animation or animations to apply to the element.",
+    "html": "<span class=\"seoSummary\">The <strong><code>animation-name</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property specifies the names of one or more <a href=\"/en-US/docs/Web/CSS/@keyframes\"><code>@keyframes</code></a> at-rules describing the animation or animations to apply to the element.</span>"
+  },
+  {
+    "name": "animation-play-state",
+    "definition": "The animation-play-state CSS property sets whether an animation is running or paused.",
+    "html": "The <strong><code>animation-play-state</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets whether an animation is running or paused."
+  },
+  {
+    "name": "animation-timing-function",
+    "definition": "The animation-timing-function CSS property sets how an animation progresses through the duration of each cycle.",
+    "html": "The <strong><code>animation-timing-function</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets how an animation progresses through the duration of each cycle."
+  },
+  {
+    "name": "animation",
+    "definition": "The animation shorthand CSS property applies an animation between styles. It is a shorthand for animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state.",
+    "html": "<span class=\"seoSummary\">The <strong><code>animation</code></strong> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand</a> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property applies an animation between styles.</span> It is a shorthand for <a href=\"/en-US/docs/Web/CSS/animation-name\"><code>animation-name</code></a>, <a href=\"/en-US/docs/Web/CSS/animation-duration\"><code>animation-duration</code></a>, <a href=\"/en-US/docs/Web/CSS/animation-timing-function\"><code>animation-timing-function</code></a>, <a href=\"/en-US/docs/Web/CSS/animation-delay\"><code>animation-delay</code></a>, <a href=\"/en-US/docs/Web/CSS/animation-iteration-count\"><code>animation-iteration-count</code></a>, <a href=\"/en-US/docs/Web/CSS/animation-direction\"><code>animation-direction</code></a>, <a href=\"/en-US/docs/Web/CSS/animation-fill-mode\"><code>animation-fill-mode</code></a>, and <a href=\"/en-US/docs/Web/CSS/animation-play-state\"><code>animation-play-state</code></a>."
+  },
+  {
+    "name": "appearance (-moz-appearance, -webkit-appearance)",
+    "definition": "The appearance CSS property is used to display an element using platform-native styling, based on the operating system's theme. The -moz-appearance and -webkit-appearance properties are non-standard versions of this property, used (respectively) by Gecko (Firefox) and by WebKit-based (e.g., Safari) and Blink-based (e.g., Chrome, Opera) browsers to achieve the same thing. Note that Firefox and Edge also support -webkit-appearance, for compatibility reasons.",
+    "html": "The <code><strong>appearance</strong></code> CSS property is used to display an element using platform-native styling, based on the operating system's theme. The <strong><code>-moz-appearance</code></strong> and <strong><code>-webkit-appearance</code></strong> properties are non-standard versions of this property, used (respectively) by Gecko (Firefox) and by WebKit-based (e.g., Safari) and Blink-based (e.g., Chrome, Opera) browsers to achieve the same thing. Note that Firefox and Edge also support <strong><code>-webkit-appearance</code></strong>, for compatibility reasons."
+  },
+  {
+    "name": "aspect-ratio",
+    "definition": "The aspect-ratio  CSS property sets a preferred aspect ratio for the box, which will be used in the calculation of auto sizes and some other layout functions.",
+    "html": "The <strong><code>aspect-ratio</code></strong>&nbsp;&nbsp;<a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets a <strong>preferred aspect ratio</strong> for the box, which will be used in the calculation of auto sizes and some other layout functions."
+  },
+  {
+    "name": "backdrop-filter",
+    "definition": "The backdrop-filter CSS property lets you apply graphical effects such as blurring or color shifting to the area behind an element. Because it applies to everything behind the element, to see the effect you must make the element or its background at least partially transparent.",
+    "html": "The <strong><code>backdrop-filter</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property lets you apply graphical effects such as blurring or color shifting to the area behind an element. Because it applies to everything <em>behind</em> the element, to see the effect you must make the element or its background at least partially transparent."
+  },
+  {
+    "name": "backface-visibility",
+    "definition": "The backface-visibility CSS property sets whether the back face of an element is visible when turned towards the user.",
+    "html": "The <strong><code>backface-visibility</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets whether the back face of an element is visible when turned towards the user."
+  },
+  {
+    "name": "background-attachment",
+    "definition": "The background-attachment CSS property sets whether a background image's position is fixed within the viewport, or scrolls with its containing block.",
+    "html": "The <strong><code>background-attachment</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets whether a background image's position is fixed within the <a href=\"/en-US/docs/Glossary/Viewport\">viewport</a>, or scrolls with its containing block."
+  },
+  {
+    "name": "background-blend-mode",
+    "definition": "The background-blend-mode CSS property sets how an element's background images should blend with each other and with the element's background color.",
+    "html": "The <strong><code>background-blend-mode</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets how an element's background images should blend with each other and with the element's background color."
+  },
+  {
+    "name": "background-clip",
+    "definition": "",
+    "html": ""
+  },
+  {
+    "name": "background-color",
+    "definition": "The background-color CSS property sets the background color of an element.",
+    "html": "The <strong><code>background-color</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the background color of an element."
+  },
+  {
+    "name": "background-image",
+    "definition": "",
+    "html": ""
+  },
+  {
+    "name": "background-origin",
+    "definition": "The background-origin CSS property sets the background's origin: from the border start, inside the border, or inside the padding.",
+    "html": "The <strong><code>background-origin</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the background's origin: from the border start, inside the border, or inside the padding."
+  },
+  {
+    "name": "background-position",
+    "definition": "The background-position CSS property sets the initial position for each background image. The position is relative to the position layer set by background-origin.",
+    "html": "The <strong><code>background-position</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the initial position for each background image. The position is relative to the position layer set by <a href=\"/en-US/docs/Web/CSS/background-origin\"><code>background-origin</code></a>."
+  },
+  {
+    "name": "background-repeat",
+    "definition": "The background-repeat CSS property sets how background images are repeated. A background image can be repeated along the horizontal and vertical axes, or not repeated at all.",
+    "html": "The <strong><code>background-repeat</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets how background images are repeated. A background image can be repeated along the horizontal and vertical axes, or not repeated at all."
+  },
+  {
+    "name": "background-size",
+    "definition": "The background-size CSS property sets the size of the element's background image. The image can be left to its natural size, stretched, or constrained to fit the available space.",
+    "html": "The <strong><code>background-size</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the size of the element's background image. The image can be left to its natural size, stretched, or constrained to fit the available space."
+  },
+  {
+    "name": "background",
+    "definition": "",
+    "html": ""
+  },
+  {
+    "name": "border-bottom-color",
+    "definition": "The border-bottom-color CSS property sets the color of an element's bottom border. It can also be set with the shorthand CSS properties border-color or border-bottom.",
+    "html": "<span class=\"seoSummary\">The <strong><code>border-bottom-color</code></strong> CSS property sets the color of an element's bottom <a href=\"/en-US/docs/Web/CSS/border\">border</a>.</span> It can also be set with the shorthand CSS properties <a href=\"/en-US/docs/Web/CSS/border-color\"><code>border-color</code></a> or <a href=\"/en-US/docs/Web/CSS/border-bottom\"><code>border-bottom</code></a>."
+  },
+  {
+    "name": "border-bottom-left-radius",
+    "definition": "The border-bottom-left-radius CSS property rounds the bottom-left corner of an element by specifying the radius (or the radius of the semi-major and semi-minor axes) of the ellipse defining the curvature of the corner.",
+    "html": "The <strong><code>border-bottom-left-radius</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property rounds the bottom-left corner of an element by specifying the radius (or the radius of the semi-major and semi-minor axes) of the ellipse defining the curvature of the corner."
+  },
+  {
+    "name": "border-bottom-right-radius",
+    "definition": "The border-bottom-right-radius CSS property rounds the bottom-right corner of an element by specifying the radius (or the radius of the semi-major and semi-minor axes) of the ellipse defining the curvature of the corner.",
+    "html": "The <strong><code>border-bottom-right-radius</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property rounds the bottom-right corner of an element by specifying the radius (or the radius of the semi-major and semi-minor axes) of the ellipse defining the curvature of the corner."
+  },
+  {
+    "name": "border-bottom-style",
+    "definition": "The border-bottom-style CSS property sets the line style of an element's bottom border.",
+    "html": "The <strong><code>border-bottom-style</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the line style of an element's bottom <a href=\"/en-US/docs/Web/CSS/border\"><code>border</code></a>."
+  },
+  {
+    "name": "border-bottom-width",
+    "definition": "The border-bottom-width CSS property sets the width of the bottom border of an element.",
+    "html": "The <strong><code>border-bottom-width</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the width of the bottom border of an element."
+  },
+  {
+    "name": "border-bottom",
+    "definition": "The border-bottom shorthand CSS property sets an element's bottom border. It sets the values of border-bottom-width, border-bottom-style and border-bottom-color.",
+    "html": "<span class=\"seoSummary\">The <strong><code>border-bottom</code></strong> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand</a> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets an element's bottom <a href=\"/en-US/docs/Web/CSS/border\">border</a>.</span> It sets the values of <a href=\"/en-US/docs/Web/CSS/border-bottom-width\"><code>border-bottom-width</code></a>, <a href=\"/en-US/docs/Web/CSS/border-bottom-style\"><code>border-bottom-style</code></a> and <a href=\"/en-US/docs/Web/CSS/border-bottom-color\"><code>border-bottom-color</code></a>."
+  },
+  {
+    "name": "border-collapse",
+    "definition": "The border-collapse CSS property sets whether cells inside a <table> have shared or separate borders.",
+    "html": "The <strong><code>border-collapse</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets whether cells inside a <a href=\"/en-US/docs/Web/HTML/Element/table\"><code>&lt;table&gt;</code></a> have shared or separate borders."
+  },
+  {
+    "name": "border-color",
+    "definition": "The border-color shorthand CSS property sets the color of an element's border.",
+    "html": "<span class=\"seoSummary\">The <strong><code>border-color</code></strong> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand</a> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the color of an element's border.</span>"
+  },
+  {
+    "name": "border-image-outset",
+    "definition": "The border-image-outset CSS property sets the distance by which an element's border image is set out from its border box.",
+    "html": "The <strong><code>border-image-outset</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the distance by which an element's <a href=\"/en-US/docs/Web/CSS/border-image\">border image</a> is set out from its border box."
+  },
+  {
+    "name": "border-image-repeat",
+    "definition": "The border-image-repeat CSS property defines how the edge regions of a source image are adjusted to fit the dimensions of an element's border image.",
+    "html": "The <strong><code>border-image-repeat</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property defines how the <a href=\"/en-US/docs/Web/CSS/border-image-slice#edge-regions\">edge regions</a> of a source image are adjusted to fit the dimensions of an element's <a href=\"/en-US/docs/Web/CSS/border-image\">border image</a>."
+  },
+  {
+    "name": "border-image-slice",
+    "definition": "The border-image-slice CSS property divides the image specified by border-image-source into regions. These regions form the components of an element's border image.",
+    "html": "The <strong><code>border-image-slice</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property divides the image specified by <a href=\"/en-US/docs/Web/CSS/border-image-source\"><code>border-image-source</code></a> into regions. These regions form the components of an element's <a href=\"/en-US/docs/Web/CSS/border-image\">border image</a>."
+  },
+  {
+    "name": "border-image-source",
+    "definition": "The border-image-source CSS property sets the source image used to create an element's border image.",
+    "html": "The <strong><code>border-image-source</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the source image used to create an element's <a href=\"/en-US/docs/Web/CSS/border-image\">border image</a>."
+  },
+  {
+    "name": "border-image-width",
+    "definition": "The border-image-width CSS property sets the width of an element's border image.",
+    "html": "The <strong><code>border-image-width</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the width of an element's <a href=\"/en-US/docs/Web/CSS/border-image\">border image</a>."
+  },
+  {
+    "name": "border-image",
+    "definition": "The border-image CSS property draws an image around a given element. It replaces the element's regular border.",
+    "html": "The <strong><code>border-image</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property draws an image around a given element. It replaces the element's regular <a href=\"/en-US/docs/Web/CSS/border\">border</a>."
+  },
+  {
+    "name": "border-left-color",
+    "definition": "The border-left-color CSS property sets the color of an element's left border. It can also be set with the shorthand CSS properties border-color or border-left.",
+    "html": "<span class=\"seoSummary\">The <strong><code>border-left-color</code></strong> CSS property sets the color of an element's left <a href=\"/en-US/docs/Web/CSS/border\">border</a>.</span> It can also be set with the shorthand CSS properties <a href=\"/en-US/docs/Web/CSS/border-color\"><code>border-color</code></a> or <a href=\"/en-US/docs/Web/CSS/border-left\"><code>border-left</code></a>."
+  },
+  {
+    "name": "border-left-style",
+    "definition": "The border-left-style CSS property sets the line style of an element's left border.",
+    "html": "The <strong><code>border-left-style</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the line style of an element's left <a href=\"/en-US/docs/Web/CSS/border\"><code>border</code></a>."
+  },
+  {
+    "name": "border-left-width",
+    "definition": "The border-left-width CSS property sets the width of the left border of an element.",
+    "html": "The <strong><code>border-left-width</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the width of the left border of an element."
+  },
+  {
+    "name": "border-left",
+    "definition": "The border-left shorthand CSS property sets all the properties of an element's left border.",
+    "html": "<span class=\"seoSummary\">The <strong><code>border-left</code></strong> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand</a> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets all the properties of an element's left <a href=\"/en-US/docs/Web/CSS/border\">border</a>.</span>"
+  },
+  {
+    "name": "border-radius",
+    "definition": "The border-radius CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.",
+    "html": "The <strong><code>border-radius</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners."
+  },
+  {
+    "name": "border-right-color",
+    "definition": "The border-right-color CSS property sets the color of an element's right border. It can also be set with the shorthand CSS properties border-color or border-right.",
+    "html": "<span class=\"seoSummary\">The <strong><code>border-right-color</code></strong> CSS property sets the color of an element's right <a href=\"/en-US/docs/Web/CSS/border\">border</a>.</span> It can also be set with the shorthand CSS properties <a href=\"/en-US/docs/Web/CSS/border-color\"><code>border-color</code></a> or <a href=\"/en-US/docs/Web/CSS/border-right\"><code>border-right</code></a>."
+  },
+  {
+    "name": "border-right-style",
+    "definition": "The border-right-style CSS property sets the line style of an element's right border.",
+    "html": "The <strong><code>border-right-style</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the line style of an element's right <a href=\"/en-US/docs/Web/CSS/border\"><code>border</code></a>."
+  },
+  {
+    "name": "border-right-width",
+    "definition": "The border-right-width CSS property sets the width of the right border of an element.",
+    "html": "The <strong><code>border-right-width</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the width of the right border of an element."
+  },
+  {
+    "name": "border-right",
+    "definition": "The border-right shorthand CSS property sets all the properties of an element's right border.",
+    "html": "<span class=\"seoSummary\">The <strong><code>border-right</code></strong> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand</a> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets all the properties of an element's right <a href=\"/en-US/docs/Web/CSS/border\">border</a>.</span>"
+  },
+  {
+    "name": "border-spacing",
+    "definition": "The border-spacing CSS property sets the distance between the borders of adjacent <table> cells. This property applies only when border-collapse is separate.",
+    "html": "The <strong><code>border-spacing</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the distance between the borders of adjacent <a href=\"/en-US/docs/Web/HTML/Element/table\"><code>&lt;table&gt;</code></a> cells. This property applies only when <a href=\"/en-US/docs/Web/CSS/border-collapse\"><code>border-collapse</code></a> is <code>separate</code>."
+  },
+  {
+    "name": "border-style",
+    "definition": "The border-style shorthand CSS property sets the line style for all four sides of an element's border.",
+    "html": "<span class=\"seoSummary\">The <strong><code>border-style</code></strong> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand</a> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the line style for all four sides of an element's border.</span>"
+  },
+  {
+    "name": "border-top-color",
+    "definition": "The border-top-color CSS property sets the color of an element's top border. It can also be set with the shorthand CSS properties border-color or border-top.",
+    "html": "<span class=\"seoSummary\">The <strong><code>border-top-color</code></strong> CSS property sets the color of an element's top <a href=\"/en-US/docs/Web/CSS/border\">border</a>.</span> It can also be set with the shorthand CSS properties <a href=\"/en-US/docs/Web/CSS/border-color\"><code>border-color</code></a> or <a href=\"/en-US/docs/Web/CSS/border-top\"><code>border-top</code></a>."
+  },
+  {
+    "name": "border-top-left-radius",
+    "definition": "The border-top-left-radius CSS property rounds the top-left corner of an element by specifying the radius (or the radius of the semi-major and semi-minor axes) of the ellipse defining the curvature of the corner.",
+    "html": "The <strong><code>border-top-left-radius</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property rounds the top-left corner of an element by specifying the radius (or the radius of the semi-major and semi-minor axes) of the ellipse defining the curvature of the corner."
+  },
+  {
+    "name": "border-top-right-radius",
+    "definition": "The border-top-right-radius CSS property rounds the top-right corner of an element by specifying the radius (or the radius of the semi-major and semi-minor axes) of the ellipse defining the curvature of the corner.",
+    "html": "The <strong><code>border-top-right-radius</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property rounds the top-right corner of an element by specifying the radius (or the radius of the semi-major and semi-minor axes) of the ellipse defining the curvature of the corner."
+  },
+  {
+    "name": "border-top-style",
+    "definition": "The border-top-style CSS property sets the line style of an element's top border.",
+    "html": "The <strong><code>border-top-style</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the line style of an element's top <a href=\"/en-US/docs/Web/CSS/border\"><code>border</code></a>."
+  },
+  {
+    "name": "border-top-width",
+    "definition": "The border-top-width CSS property sets the width of the top border of an element.",
+    "html": "The <strong><code>border-top-width</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the width of the top border of an element."
+  },
+  {
+    "name": "border-top",
+    "definition": "The border-top shorthand CSS property sets all the properties of an element's top border.",
+    "html": "<span class=\"seoSummary\">The <strong><code>border-top</code></strong> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand</a> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets all the properties of an element's top <a href=\"/en-US/docs/Web/CSS/border\">border</a>.</span>"
+  },
+  {
+    "name": "border-width",
+    "definition": "The border-width shorthand CSS property sets the width of an element's border.",
+    "html": "The <strong><code>border-width</code></strong> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand</a> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the width of an element's border."
+  },
+  {
+    "name": "bottom",
+    "definition": "The bottom CSS property participates in setting the vertical position of a positioned element. It has no effect on non-positioned elements.",
+    "html": "The <strong><code>bottom</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property participates in setting the vertical position of a <a href=\"/en-US/docs/Web/CSS/position\">positioned element</a>. It has no effect on non-positioned elements."
+  },
+  {
+    "name": "box-shadow",
+    "definition": "The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color.",
+    "html": "<span class=\"seoSummary\">The <strong><code>box-shadow</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property adds shadow effects around an element's frame. You can set multiple effects separated by commas.</span> A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color."
+  },
+  {
+    "name": "box-sizing",
+    "definition": "",
+    "html": ""
+  },
+  {
+    "name": "break-after",
+    "definition": "The break-after CSS property sets how page, column, or region breaks should behave after a generated box. If there is no generated box, the property is ignored.",
+    "html": "The <strong><code>break-after</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets how page, column, or region breaks should behave after a generated box. If there is no generated box, the property is ignored."
+  },
+  {
+    "name": "break-before",
+    "definition": "The break-before CSS property sets how page, column, or region breaks should behave before a generated box. If there is no generated box, the property is ignored.",
+    "html": "The <strong><code>break-before</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets how page, column, or region breaks should behave before a generated box. If there is no generated box, the property is ignored."
+  },
+  {
+    "name": "break-inside",
+    "definition": "The break-inside CSS property sets how page, column, or region breaks should behave inside a generated box. If there is no generated box, the property is ignored.",
+    "html": "The <strong><code>break-inside</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets how page, column, or region breaks should behave inside a generated box. If there is no generated box, the property is ignored."
+  },
+  {
+    "name": "caption-side",
+    "definition": "The caption-side CSS property puts the content of a table's <caption> on the specified side. The values are relative to the writing-mode of the table.",
+    "html": "The <strong><code>caption-side</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property puts the content of a table's <a href=\"/en-US/docs/Web/HTML/Element/caption\"><code>&lt;caption&gt;</code></a> on the specified side. The values are relative to the <a href=\"/en-US/docs/Web/CSS/writing-mode\"><code>writing-mode</code></a> of the table."
+  },
+  {
+    "name": "caret-color",
+    "definition": "The caret-color CSS property sets the color of the insertion caret, the visible marker where the next character typed will be inserted. This is sometimes referred to as the text input cursor. The caret appears in elements such as <input> or those with the contenteditable attribute. The caret is typically a thin vertical line that flashes to help make it more noticeable. By default, it is black, but its color can be altered with this property.",
+    "html": "<span class=\"seoSummary\">The <strong><code>caret-color</code></strong> CSS property sets the color of the <strong>insertion caret</strong>, the visible marker where the next character typed will be inserted. This is sometimes referred to as the <strong>text input cursor</strong>.</span> The caret appears in elements such as <a href=\"/en-US/docs/Web/HTML/Element/input\"><code>&lt;input&gt;</code></a> or those with the <a href=\"/en-US/docs/Web/HTML/Global_attributes#attr-contenteditable\"><code>contenteditable</code></a> attribute. The caret is typically a thin vertical line that flashes to help make it more noticeable. By default, it is black, but its color can be altered with this property."
+  },
+  {
+    "name": "clear",
+    "definition": "The clear CSS property sets whether an element must be moved below (cleared) floating elements that precede it. The clear property applies to floating and non-floating elements.",
+    "html": "The <strong><code>clear</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets whether an element must be moved below (cleared) <a href=\"/en-US/docs/Web/CSS/float\">floating</a> elements that precede it. The <code>clear</code> property applies to floating and non-floating elements."
+  },
+  {
+    "name": "color-scheme",
+    "definition": "The color-scheme CSS property allows an element to indicate which color schemes it can comfortably be rendered in.",
+    "html": "<span class=\"seoSummary\">The <strong><code>color-scheme</code></strong> CSS property allows an element to indicate which color schemes it can comfortably be rendered in.</span>"
+  },
+  {
+    "name": "color",
+    "definition": "The color CSS property sets the foreground color value of an element's text and text decorations, and sets the <currentcolor> value. currentcolor may be used as an indirect value on other properties and is the default for other color properties, such as border-color.",
+    "html": "<span class=\"seoSummary\">The <strong><code>color</code></strong> CSS property sets the foreground <a href=\"/en-US/docs/Web/CSS/color_value\">color value</a> of an element's text and <a href=\"/en-US/docs/Web/CSS/text-decoration\">text decorations</a>, and sets the <a href=\"/en-US/docs/Web/CSS/color_value#currentcolor_keyword\"><code>&lt;currentcolor&gt;</code></a> value.</span> <code>currentcolor</code> may be used as an indirect value on <em>other</em> properties and is the default for other color properties, such as <a href=\"/en-US/docs/Web/CSS/border-color\"><code>border-color</code></a>."
+  },
+  {
+    "name": "column-count",
+    "definition": "The column-count CSS property breaks an element's content into the specified number of columns.",
+    "html": "The <strong><code>column-count</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property breaks an element's content into the specified number of columns."
+  },
+  {
+    "name": "column-fill",
+    "definition": "The column-fill CSS property controls how an element's contents are balanced when broken into columns.",
+    "html": "The <strong><code>column-fill</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property controls how an element's contents are balanced when broken into columns."
+  },
+  {
+    "name": "column-gap (grid-column-gap)",
+    "definition": "The column-gap CSS property sets the size of the gap (gutter) between an element's columns.",
+    "html": "The <strong><code>column-gap</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the size of the gap (<a href=\"/en-US/docs/Glossary/Gutters\">gutter</a>) between an element's columns."
+  },
+  {
+    "name": "column-rule-color",
+    "definition": "The column-rule-color CSS property sets the color of the line drawn between columns in a multi-column layout.",
+    "html": "The <strong><code>column-rule-color</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the color of the line drawn between columns in a multi-column layout."
+  },
+  {
+    "name": "column-rule-style",
+    "definition": "The column-rule-style CSS property sets the style of the line drawn between columns in a multi-column layout.",
+    "html": "The <strong><code>column-rule-style</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the style of the line drawn between columns in a multi-column layout."
+  },
+  {
+    "name": "column-rule-width",
+    "definition": "The column-rule-width CSS property sets the width of the line drawn between columns in a multi-column layout.",
+    "html": "The <strong><code>column-rule-width</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the width of the line drawn between columns in a multi-column layout."
+  },
+  {
+    "name": "column-rule",
+    "definition": "The column-rule shorthand CSS property sets the width, style, and color of the line drawn between columns in a multi-column layout.",
+    "html": "The <strong><code>column-rule</code></strong>&nbsp;<a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand</a> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the width, style, and color of the line drawn between columns in a multi-column layout."
+  },
+  {
+    "name": "column-span",
+    "definition": "The column-span CSS property makes it possible for an element to span across all columns when its value is set to all.",
+    "html": "The <strong><code>column-span</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property makes it possible for an element to span across all columns when its value is set to <code>all</code>."
+  },
+  {
+    "name": "column-width",
+    "definition": "The column-width CSS property sets the ideal column width in a multi-column layout. The container will have as many columns as can fit without any of them having a width less than the column-width value. If the width of the container is narrower than the specified value, the single column's width will be smaller than the declared column width.",
+    "html": "<span class=\"seoSummary\">The <strong><code>column-width</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the ideal column width in a multi-column layout.</span> The container will have as many columns as can fit without any of them having a width less than the <code>column-width</code> value. If the width of the container is narrower than the specified value, the single column's width will be smaller than the declared column width."
+  },
+  {
+    "name": "columns",
+    "definition": "The columns CSS shorthand property sets the number of columns to use when drawing an element's contents, as well as those columns' widths.",
+    "html": "The <strong><code>columns</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> shorthand property sets the number of columns to use when drawing an element's contents, as well as those columns' widths."
+  },
+  {
+    "name": "contain",
+    "definition": "The contain CSS property allows an author to indicate that an element and its contents are, as much as possible, independent of the rest of the document tree. This allows the browser to recalculate layout, style, paint, size, or any combination of them for a limited area of the DOM and not the entire page, leading to obvious performance benefits.",
+    "html": "The <strong><code>contain</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property allows an author to indicate that an element and its contents are, as much as possible, <em>independent</em> of the rest of the document tree. This allows the browser to recalculate layout, style, paint, size, or any combination of them for a limited area of the DOM and not the entire page, leading to obvious performance benefits."
+  },
+  {
+    "name": "content-visibility",
+    "definition": "",
+    "html": ""
+  },
+  {
+    "name": "content",
+    "definition": "The content CSS property replaces an element with a generated value. Objects inserted using the content property are anonymous replaced elements.",
+    "html": "The <strong><code>content</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property replaces an element with a generated value. Objects inserted using the <code>content</code> property are <strong>anonymous <a href=\"/en-US/docs/Web/CSS/Replaced_element\">replaced elements</a></strong><em>.</em>"
+  },
+  {
+    "name": "counter-increment",
+    "definition": "The counter-increment CSS property increases or decreases the value of a CSS counter by a given value.",
+    "html": "The <strong><code>counter-increment</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property increases or decreases the value of a <a href=\"/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters\">CSS counter</a> by a given value."
+  },
+  {
+    "name": "counter-reset",
+    "definition": "The counter-reset CSS property resets a CSS counter to a given value.",
+    "html": "The <strong><code>counter-reset</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property resets a <a href=\"/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters\">CSS counter</a> to a given value."
+  },
+  {
+    "name": "counter-set",
+    "definition": "The counter-set CSS property sets a CSS counter to a given value. It manipulates the value of existing counters, and will only create new counters if there isn't already a counter of the given name on the element.",
+    "html": "The <strong><code>counter-set</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets a <a href=\"/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters\">CSS counter</a> to a given value. It manipulates the value of existing counters, and will&nbsp;only create new counters if there isn't already a counter of the given name on the element."
+  },
+  {
+    "name": "cursor",
+    "definition": "",
+    "html": ""
+  },
+  {
+    "name": "direction",
+    "definition": "The direction CSS property sets the direction of text, table columns, and horizontal overflow. Use rtl for languages written from right to left (like Hebrew or Arabic), and ltr for those written from left to right (like English and most other languages).",
+    "html": "<span class=\"seoSummary\">The <strong><code>direction</code></strong> CSS property sets the direction of text, table columns, and horizontal overflow.</span> Use <code>rtl</code> for languages written from right to left (like Hebrew or Arabic), and <code>ltr</code> for those written from left to right (like English and most other languages)."
+  },
+  {
+    "name": "display",
+    "definition": "The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.",
+    "html": "The <strong><code>display</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets whether an element is treated as a <a href=\"/en-US/docs/Web/CSS/CSS_Flow_Layout\" rel=\"nofollow\">block or inline element</a> and the layout used for its children, such as <a href=\"/en-US/docs/Web/CSS/CSS_Flow_Layout\">flow layout</a>, <a href=\"/en-US/docs/Web/CSS/CSS_Grid_Layout\" rel=\"nofollow\">grid</a> or <a href=\"/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout\" rel=\"nofollow\">flex</a>."
+  },
+  {
+    "name": "empty-cells",
+    "definition": "The empty-cells CSS property sets whether borders and backgrounds appear around <table> cells that have no visible content.",
+    "html": "The <strong><code>empty-cells</code></strong> CSS property sets whether borders and backgrounds appear around <a href=\"/en-US/docs/Web/HTML/Element/table\"><code>&lt;table&gt;</code></a> cells that have no visible content."
+  },
+  {
+    "name": "filter",
+    "definition": "The filter CSS property applies graphical effects like blur or color shift to an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders.",
+    "html": "<span class=\"seoSummary\">The <strong><code>filter</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property applies graphical effects like blur or color shift to an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders.</span>"
+  },
+  {
+    "name": "flex-basis",
+    "definition": "The flex-basis CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing.",
+    "html": "The <strong><code>flex-basis</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with <a href=\"/en-US/docs/Web/CSS/box-sizing\"><code>box-sizing</code></a>."
+  },
+  {
+    "name": "flex-direction",
+    "definition": "The flex-direction CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).",
+    "html": "<span class=\"seoSummary\">The <strong><code>flex-direction</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).</span>"
+  },
+  {
+    "name": "flex-flow",
+    "definition": "The flex-flow CSS shorthand property specifies the direction of a flex container, as well as its wrapping behavior.",
+    "html": "The <strong><code>flex-flow</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> specifies the direction of a flex container, as well as its wrapping behavior."
+  },
+  {
+    "name": "flex-grow",
+    "definition": "The flex-grow CSS property sets the flex grow factor of a flex item's main size.",
+    "html": "<span class=\"seoSummary\">The <strong><code>flex-grow</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a>&nbsp;property sets the flex grow factor of a flex item's <a href=\"https://www.w3.org/TR/css-flexbox/#main-size\" class=\"external\" rel=\" noopener\">main size</a>.</span>"
+  },
+  {
+    "name": "flex-shrink",
+    "definition": "The flex-shrink CSS property sets the flex shrink factor of a flex item. If the size of all flex items is larger than the flex container, items shrink to fit according to flex-shrink.",
+    "html": "<span class=\"seoSummary\">The <strong><code>flex-shrink</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the flex shrink factor of a flex item. If the size of all flex items is larger than the flex container, items shrink to fit according to <code>flex-shrink</code>.</span>"
+  },
+  {
+    "name": "flex-wrap",
+    "definition": "The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.",
+    "html": "The <strong><code>flex-wrap</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked."
+  },
+  {
+    "name": "flex",
+    "definition": "The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container.",
+    "html": "<span class=\"seoSummary\">The <strong><code>flex</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> sets how a flex <em>item</em> will grow or shrink to fit the space available in its flex container.</span>"
+  },
+  {
+    "name": "float",
+    "definition": "The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning).",
+    "html": "<span class=\"seoSummary\">The <strong><code>float</code></strong> CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it.</span> The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to <a href=\"/en-US/docs/Web/CSS/position#absolute_positioning\">absolute positioning</a>)."
+  },
+  {
+    "name": "font-family",
+    "definition": "The font-family CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element.",
+    "html": "The <strong><code>font-family</code></strong> CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element."
+  },
+  {
+    "name": "font-feature-settings",
+    "definition": "The font-feature-settings CSS property controls advanced typographic features in OpenType fonts.",
+    "html": "The <strong><code>font-feature-settings</code></strong> CSS property controls advanced typographic features in OpenType fonts."
+  },
+  {
+    "name": "font-kerning",
+    "definition": "The font-kerning CSS property sets the use of the kerning information stored in a font.",
+    "html": "The <strong><code>font-kerning</code></strong> CSS property sets the use of the kerning information stored in a font."
+  },
+  {
+    "name": "font-language-override",
+    "definition": "The font-language-override CSS property controls the use of language-specific glyphs in a typeface.",
+    "html": "The <strong><code>font-language-override</code></strong> CSS property controls the use of language-specific glyphs in a typeface."
+  },
+  {
+    "name": "font-optical-sizing",
+    "definition": "The font-optical-sizing CSS property sets whether text rendering is optimized for viewing at different sizes.",
+    "html": "<span class=\"seoSummary\">The <strong><code>font-optical-sizing</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets whether text rendering is optimized for viewing at different sizes.</span>"
+  },
+  {
+    "name": "font-size-adjust",
+    "definition": "The font-size-adjust CSS property sets the size of lower-case letters relative to the current font size (which defines the size of upper-case letters).",
+    "html": "The <strong><code>font-size-adjust</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the size of lower-case letters relative to the current font size (which defines the size of upper-case letters)."
+  },
+  {
+    "name": "font-size",
+    "definition": "The font-size CSS property sets the size of the font. Changing the font size also updates the sizes of the font size-relative <length> units, such as em, ex, and so forth.",
+    "html": "<span class=\"seoSummary\">The <strong><code>font-size</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the size of the font. Changing the font size also updates the sizes of the font size-relative <a href=\"/en-US/docs/Web/CSS/length\"><code>&lt;length&gt;</code></a> units, such as&nbsp;<code>em</code>, <code>ex</code>, and so forth.</span>"
+  },
+  {
+    "name": "font-stretch",
+    "definition": "",
+    "html": ""
+  },
+  {
+    "name": "font-style",
+    "definition": "The font-style CSS property sets whether a font should be styled with a normal, italic, or oblique face from its font-family.",
+    "html": "<span class=\"seoSummary\">The <strong><code>font-style</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets whether a font should be styled with a normal, italic, or oblique face from its <a href=\"/en-US/docs/Web/CSS/font-family\"><code>font-family</code></a>.</span>"
+  },
+  {
+    "name": "font-synthesis",
+    "definition": "The font-synthesis CSS property controls which missing typefaces, bold or italic, may be synthesized by the browser.",
+    "html": "The <strong><code>font-synthesis</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property controls which missing typefaces, bold or italic, may be synthesized by the browser."
+  },
+  {
+    "name": "font-variant-alternates",
+    "definition": "The font-variant-alternates CSS property controls the usage of alternate glyphs. These alternate glyphs may be referenced by alternative names defined in @font-feature-values.",
+    "html": "<span class=\"seoSummary\">The <strong><code>font-variant-alternates</code></strong> CSS property controls the usage of alternate glyphs. These alternate glyphs may be referenced by alternative names defined in <a href=\"/en-US/docs/Web/CSS/@font-feature-values\"><code>@font-feature-values</code></a>.</span>"
+  },
+  {
+    "name": "font-variant-caps",
+    "definition": "The font-variant-caps CSS property controls the use of alternate glyphs for capital letters.",
+    "html": "The <strong><code>font-variant-caps</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property controls the use of alternate glyphs for capital letters."
+  },
+  {
+    "name": "font-variant-east-asian",
+    "definition": "The font-variant-east-asian CSS property controls the use of alternate glyphs for East Asian scripts, like Japanese and Chinese.",
+    "html": "The <strong><code>font-variant-east-asian</code></strong> CSS property controls the use of alternate glyphs for East Asian scripts, like Japanese and Chinese."
+  },
+  {
+    "name": "font-variant-ligatures",
+    "definition": "The font-variant-ligatures CSS property controls which ligatures and contextual forms are used in textual content of the elements it applies to. This leads to more harmonized forms in the resulting text.",
+    "html": "<span class=\"seoSummary\">The <strong><code>font-variant-ligatures</code></strong> CSS property controls which <a href=\"/en-US/docs/Glossary/Ligature\">ligatures</a> and <a class=\"page-not-created\" title=\"The documentation about this has not yet been written; please consider contributing!\">contextual forms</a> are used in textual content of the elements it applies to.</span> This leads to more harmonized forms in the resulting text."
+  },
+  {
+    "name": "font-variant-numeric",
+    "definition": "The font-variant-numeric CSS property controls the usage of alternate glyphs for numbers, fractions, and ordinal markers.",
+    "html": "The <strong><code>font-variant-numeric</code></strong> CSS property controls the usage of alternate glyphs for numbers, fractions, and ordinal markers."
+  },
+  {
+    "name": "font-variant-position",
+    "definition": "The font-variant-position CSS property controls the use of alternate, smaller glyphs that are positioned as superscript or subscript.",
+    "html": "The <strong><code>font-variant-position</code></strong> CSS property controls the use of alternate, smaller glyphs that are positioned as superscript or subscript."
+  },
+  {
+    "name": "font-variant",
+    "definition": "The font-variant CSS shorthand property allows you to set all the font variants for a font.",
+    "html": "The <strong><code>font-variant</code></strong> CSS <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> allows you to set all the font variants for a font."
+  },
+  {
+    "name": "font-variation-settings",
+    "definition": "The font-variation-settings CSS property provides low-level control over variable font characteristics, by specifying the four letter axis names of the characteristics you want to vary, along with their values.",
+    "html": "The <strong><code>font-variation-settings</code></strong> CSS property provides low-level control over <a href=\"/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide\">variable font</a> characteristics, by specifying the four letter axis names of the characteristics you want to vary, along with their values."
+  },
+  {
+    "name": "font-weight",
+    "definition": "The font-weight CSS property sets the weight (or boldness) of the font. The weights available depend on the font-family that is currently set.",
+    "html": "The <strong><code>font-weight</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the weight (or boldness) of the font. The weights available depend on the <a href=\"/en-US/docs/Web/CSS/font-family\"><code>font-family</code></a> that is currently set."
+  },
+  {
+    "name": "font",
+    "definition": "The font CSS shorthand property sets all the different properties of an element's font. Alternatively, it sets an element's font to a system font.",
+    "html": "The <strong><code>font</code></strong> CSS <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> sets all the different properties of an element's font. Alternatively, it sets an element's font to a system font."
+  },
+  {
+    "name": "forced-color-adjust",
+    "definition": "The forced-color-adjust CSS property allows authors to opt certain elements out of forced colors mode. This then restores the control of those values to CSS.",
+    "html": "<span class=\"seoSummary\">The <strong><code>forced-color-adjust</code></strong> CSS property allows authors to opt certain elements out of forced colors mode. This then restores the control of those values to CSS.</span>"
+  },
+  {
+    "name": "gap (grid-gap)",
+    "definition": "The gap CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for row-gap and column-gap.",
+    "html": "<span class=\"seoSummary\">The <strong><code>gap</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the gaps (<a href=\"/en-US/docs/Glossary/Gutters\">gutters</a>) between rows and columns. It is a <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand</a> for <a href=\"/en-US/docs/Web/CSS/row-gap\"><code>row-gap</code></a> and <a href=\"/en-US/docs/Web/CSS/column-gap\"><code>column-gap</code></a>.</span>"
+  },
+  {
+    "name": "grid-area",
+    "definition": "The grid-area CSS shorthand property specifies a grid item’s size and location within a grid by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the edges of its grid area.",
+    "html": "The <strong><code>grid-area</code></strong> CSS <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> specifies a grid item’s size and location within a <a href=\"/en-US/docs/Glossary/Grid\">grid</a> by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the edges of its <a href=\"/en-US/docs/Glossary/Grid_Areas\">grid area</a>."
+  },
+  {
+    "name": "grid-auto-columns",
+    "definition": "The grid-auto-columns CSS property specifies the size of an implicitly-created grid column track or pattern of tracks.",
+    "html": "The <strong><code>grid-auto-columns</code></strong> CSS property specifies the size of an implicitly-created grid column <a href=\"/en-US/docs/Glossary/Grid_Tracks\">track</a> or pattern of tracks."
+  },
+  {
+    "name": "grid-auto-flow",
+    "definition": "The grid-auto-flow CSS property controls how the auto-placement algorithm works, specifying exactly how auto-placed items get flowed into the grid.",
+    "html": "The <strong><code>grid-auto-flow</code></strong> CSS property controls how the auto-placement algorithm works, specifying exactly how auto-placed items get flowed into the grid."
+  },
+  {
+    "name": "grid-auto-rows",
+    "definition": "The grid-auto-rows CSS property specifies the size of an implicitly-created grid row track or pattern of tracks.",
+    "html": "The <strong><code>grid-auto-rows</code></strong> CSS property specifies the size of an implicitly-created grid row <a href=\"/en-US/docs/Glossary/Grid_Tracks\">track</a>&nbsp;or pattern of tracks."
+  },
+  {
+    "name": "grid-column-end",
+    "definition": "The grid-column-end CSS property specifies a grid item’s end position within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the block-end edge of its grid area.",
+    "html": "The <strong><code>grid-column-end</code></strong> CSS property specifies a grid item’s end position within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the block-end edge of its <a href=\"/en-US/docs/Glossary/Grid_Areas\">grid area</a>."
+  },
+  {
+    "name": "grid-column-start",
+    "definition": "The grid-column-start CSS property specifies a grid item’s start position within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement. This start position defines the block-start edge of the grid area.",
+    "html": "<span class=\"seoSummary\">The <strong><code>grid-column-start</code></strong> CSS property specifies a grid item’s start position within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement. This start position defines the block-start edge of the <a href=\"/en-US/docs/Glossary/Grid_Areas\">grid area</a>.</span>"
+  },
+  {
+    "name": "grid-column",
+    "definition": "The grid-column CSS shorthand property specifies a grid item's size and location within a grid column by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.",
+    "html": "The <strong><code>grid-column</code></strong> CSS <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> specifies a grid item's size and location within a <a href=\"/en-US/docs/Glossary/Grid_Column\">grid column</a> by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its <a href=\"/en-US/docs/Glossary/Grid_Areas\">grid area</a>."
+  },
+  {
+    "name": "grid-row-end",
+    "definition": "The grid-row-end CSS property specifies a grid item’s end position within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-end edge of its grid area.",
+    "html": "The <strong><code>grid-row-end</code></strong> CSS property specifies a grid item’s end position within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-end edge of its <a href=\"/en-US/docs/Glossary/Grid_Areas\">grid area</a>."
+  },
+  {
+    "name": "grid-row-start",
+    "definition": "The grid-row-start CSS property specifies a grid item’s start position within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start edge of its grid area.",
+    "html": "The <strong><code>grid-row-start</code></strong> CSS property specifies a grid item’s start position within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start edge of its <a href=\"/en-US/docs/Glossary/Grid_Areas\">grid area</a>."
+  },
+  {
+    "name": "grid-row",
+    "definition": "The grid-row CSS shorthand property specifies a grid item’s size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.",
+    "html": "The <strong><code>grid-row</code></strong> CSS <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> specifies a grid item’s size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its <a href=\"/en-US/docs/Glossary/Grid_Areas\">grid area</a>."
+  },
+  {
+    "name": "grid-template-areas",
+    "definition": "The grid-template-areas CSS property specifies named grid areas, establishing the cells in the grid and assigning them names.",
+    "html": "The <strong><code>grid-template-areas</code></strong> CSS property specifies named <a href=\"/en-US/docs/Glossary/Grid_Areas\">grid areas</a>, establishing the cells in the grid and assigning them names."
+  },
+  {
+    "name": "grid-template-columns",
+    "definition": "The grid-template-columns CSS property defines the line names and track sizing functions of the grid columns.",
+    "html": "The <strong><code>grid-template-columns</code></strong> CSS property defines the line names and track sizing functions of the <a href=\"/en-US/docs/Glossary/Grid_Column\">grid columns</a>."
+  },
+  {
+    "name": "grid-template-rows",
+    "definition": "The grid-template-rows CSS property defines the line names and track sizing functions of the grid rows.",
+    "html": "The <strong><code>grid-template-rows</code></strong> CSS property defines the line names and track sizing functions of the <a href=\"/en-US/docs/Glossary/Grid_Rows\">grid rows</a>."
+  },
+  {
+    "name": "grid-template",
+    "definition": "The grid-template CSS property is a shorthand property for defining grid columns, rows, and areas.",
+    "html": "The <strong><code>grid-template</code></strong> CSS property is a <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> for defining <a href=\"/en-US/docs/Glossary/Grid_Column\">grid columns</a>, <a href=\"/en-US/docs/Glossary/Grid_Rows\">rows</a>, and <a href=\"/en-US/docs/Glossary/Grid_Areas\">areas</a>."
+  },
+  {
+    "name": "grid",
+    "definition": "The grid CSS property is a shorthand property that sets all of the explicit and implicit grid properties in a single declaration.",
+    "html": "The <strong><code>grid</code></strong> CSS property is a <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> that sets all of the explicit and implicit grid properties in a single declaration."
+  },
+  {
+    "name": "height",
+    "definition": "The height CSS property specifies the height of an element. By default, the property defines the height of the content area. If box-sizing is set to border-box, however, it instead determines the height of the border area.",
+    "html": "The <strong><code>height</code></strong> CSS property specifies the height of an element. By default, the property defines the height of the <a href=\"/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model#content-area\">content area</a>. If <a href=\"/en-US/docs/Web/CSS/box-sizing\"><code>box-sizing</code></a> is set to <code>border-box</code>, however, it instead determines the height of the <a href=\"/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model#border-area\">border area</a>."
+  },
+  {
+    "name": "hyphens",
+    "definition": "The hyphens CSS property specifies how words should be hyphenated when text wraps across multiple lines. It can prevent hyphenation entirely, hyphenate at manually-specified points within the text, or let the browser automatically insert hyphens where appropriate.",
+    "html": "<span class=\"seoSummary\">The <strong><code>hyphens</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property specifies how words should be hyphenated when text wraps across multiple lines.</span> It can prevent hyphenation entirely, hyphenate at manually-specified points within the text, or let the browser automatically insert hyphens where appropriate."
+  },
+  {
+    "name": "image-rendering",
+    "definition": "The image-rendering CSS property sets an image scaling algorithm. The property applies to an element itself, to any images set in its other properties, and to its descendants.",
+    "html": "The <strong><code>image-rendering</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets an image scaling algorithm. The property applies to an element itself, to any images set in its other properties, and to its descendants."
+  },
+  {
+    "name": "inline-size",
+    "definition": "The inline-size CSS property defines the horizontal or vertical size of an element's block, depending on its writing mode. It corresponds to either the width or the height property, depending on the value of writing-mode.",
+    "html": "The <strong><code>inline-size</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property defines the horizontal or vertical size of an element's block, depending on its writing mode. It corresponds to either the <a href=\"/en-US/docs/Web/CSS/width\"><code>width</code></a> or the <a href=\"/en-US/docs/Web/CSS/height\"><code>height</code></a> property, depending on the value of <a href=\"/en-US/docs/Web/CSS/writing-mode\"><code>writing-mode</code></a>."
+  },
+  {
+    "name": "isolation",
+    "definition": "The isolation CSS property determines whether an element must create a new stacking context.",
+    "html": "The <strong><code>isolation</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property determines whether an element must create a new <a href=\"/en-US/docs/Glossary/Stacking_context\">stacking context</a>."
+  },
+  {
+    "name": "justify-content",
+    "definition": "The CSS justify-content property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.",
+    "html": "The <a href=\"/en-US/docs/Web/CSS\">CSS</a> <strong><code>justify-content</code></strong> property defines how the browser distributes space between and around content items along the <a href=\"/en-US/docs/Glossary/Main_Axis\">main-axis</a> of a flex container, and the inline axis of a grid container."
+  },
+  {
+    "name": "justify-items",
+    "definition": "The CSS justify-items property defines the default justify-self for all items of the box, giving them all a default way of justifying each box along the appropriate axis.",
+    "html": "The <a href=\"/en-US/docs/Web/CSS\">CSS</a> <strong><code>justify-items</code></strong> property defines the default <a href=\"/en-US/docs/Web/CSS/justify-self\"><code>justify-self</code></a> for all items of the box, giving them all a default way of justifying each box along the appropriate axis."
+  },
+  {
+    "name": "justify-self",
+    "definition": "The CSS justify-self property sets the way a box is justified inside its alignment container along the appropriate axis.",
+    "html": "The <a href=\"/en-US/docs/Web/CSS\">CSS</a> <strong><code>justify-self</code></strong> property sets the way a box is justified inside its alignment container along the appropriate axis."
+  },
+  {
+    "name": "left",
+    "definition": "The left CSS property participates in specifying the horizontal position of a positioned element. It has no effect on non-positioned elements.",
+    "html": "The <strong><code>left</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property participates in specifying the horizontal position of a <a href=\"/en-US/docs/Web/CSS/position\">positioned element</a>. It has no effect on non-positioned elements."
+  },
+  {
+    "name": "letter-spacing",
+    "definition": "The letter-spacing CSS property sets the horizontal spacing behavior between text characters. This value is added to the natural spacing between characters while rendering the text. Positive values of letter-spacing causes characters to spread farther apart, while negative values of letter-spacing bring characters closer together.",
+    "html": "The <strong><code>letter-spacing</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the horizontal spacing behavior between text characters. This value is added to the natural spacing between characters while rendering the text. Positive values of <code>letter-spacing</code> causes characters to spread farther apart, while negative values of <code>letter-spacing</code> bring characters closer together."
+  },
+  {
+    "name": "line-break",
+    "definition": "The line-break CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.",
+    "html": "The <strong><code>line-break</code></strong> CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols."
+  },
+  {
+    "name": "line-height-step",
+    "definition": "The line-height-step CSS property sets the step unit for line box heights. When the property is set, line box heights are rounded up to the closest multiple of the unit.",
+    "html": "The <strong><code>line-height-step</code></strong> CSS property sets the step unit for line box heights. When the property is set, line box heights are rounded up to the closest multiple of the unit."
+  },
+  {
+    "name": "line-height",
+    "definition": "The line-height CSS property sets the height of a line box. It's commonly used to set the distance between lines of text. On block-level elements, it specifies the minimum height of line boxes within the element. On non-replaced inline elements, it specifies the height that is used to calculate line box height.",
+    "html": "<span class=\"seoSummary\">The <strong><code>line-height</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the height of a line box. It's commonly used to set the distance between lines of text.</span> On block-level elements, it specifies the minimum height of line boxes within the element. On non-<a href=\"/en-US/docs/Web/CSS/Replaced_element\">replaced</a> inline elements, it specifies the height that is used to calculate line box height."
+  },
+  {
+    "name": "list-style-image",
+    "definition": "The list-style-image CSS property sets an image to be used as the list item marker.",
+    "html": "The <strong><code>list-style-image</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets an image to be used as the list item marker."
+  },
+  {
+    "name": "list-style-position",
+    "definition": "The list-style-position CSS property sets the position of the ::marker relative to a list item.",
+    "html": "The <strong><code>list-style-position</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the position of the <a href=\"/en-US/docs/Web/CSS/::marker\"><code>::marker</code></a> relative to a list item."
+  },
+  {
+    "name": "list-style-type",
+    "definition": "The list-style-type CSS property sets the marker (such as a disc, character, or custom counter style) of a list item element.",
+    "html": "The <strong><code>list-style-type</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the marker (such as a disc, character, or custom counter style) of a list item element."
+  },
+  {
+    "name": "list-style",
+    "definition": "The list-style CSS shorthand property allows you to set all the list style properties at once.",
+    "html": "The <strong><code>list-style</code></strong> CSS <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> allows you to set all the list style properties at once."
+  },
+  {
+    "name": "margin-bottom",
+    "definition": "The margin-bottom CSS property sets the margin area on the bottom of an element. A positive value places it farther from its neighbors, while a negative value places it closer.",
+    "html": "The <strong><code>margin-bottom</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the <a href=\"/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model\">margin area</a> on the bottom of an element. A positive value places it farther from its neighbors, while a negative value places it closer."
+  },
+  {
+    "name": "margin-left",
+    "definition": "The margin-left CSS property sets the margin area on the left side of an element. A positive value places it farther from its neighbors, while a negative value places it closer.",
+    "html": "The <strong><code>margin-left</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the <a href=\"/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model\">margin area</a> on the left side of an element. A positive value places it farther from its neighbors, while a negative value places it closer."
+  },
+  {
+    "name": "margin-right",
+    "definition": "The margin-right CSS property sets the margin area on the right side of an element. A positive value places it farther from its neighbors, while a negative value places it closer.",
+    "html": "The <strong><code>margin-right</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the <a href=\"/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model\">margin area</a> on the right side of an element. A positive value places it farther from its neighbors, while a negative value places it closer."
+  },
+  {
+    "name": "margin-top",
+    "definition": "The margin-top CSS property sets the margin area on the top of an element. A positive value places it farther from its neighbors, while a negative value places it closer.",
+    "html": "The <strong><code>margin-top</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the <a href=\"/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model\">margin area</a> on the top of an element. A positive value places it farther from its neighbors, while a negative value places it closer."
+  },
+  {
+    "name": "margin",
+    "definition": "The margin CSS property sets the margin area on all four sides of an element. It is a shorthand for margin-top, margin-right, margin-bottom, and margin-left.",
+    "html": "The <strong><code>margin</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the <a href=\"/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model\">margin area</a> on all four sides of an element. It is a <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand</a> for <a href=\"/en-US/docs/Web/CSS/margin-top\"><code>margin-top</code></a>, <a href=\"/en-US/docs/Web/CSS/margin-right\"><code>margin-right</code></a>, <a href=\"/en-US/docs/Web/CSS/margin-bottom\"><code>margin-bottom</code></a>, and <a href=\"/en-US/docs/Web/CSS/margin-left\"><code>margin-left</code></a>."
+  },
+  {
+    "name": "mask-border",
+    "definition": "The mask-border CSS shorthand property lets you create a mask along the edge of an element's border.",
+    "html": "The <strong><code>mask-border</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> lets you create a mask along the edge of an element's border."
+  },
+  {
+    "name": "mask-type",
+    "definition": "The mask-type CSS property sets whether an SVG <mask> element is used as a luminance or an alpha mask. It applies to the <mask> element itself.",
+    "html": "The <strong><code>mask-type</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets whether an SVG <a href=\"/en-US/docs/Web/SVG/Element/mask\"><code>&lt;mask&gt;</code></a> element is used as a <em>luminance</em> or an <em>alpha</em> mask. It applies to the <code>&lt;mask&gt;</code> element itself."
+  },
+  {
+    "name": "mask",
+    "definition": "The mask CSS shorthand property hides an element (partially or fully) by masking or clipping the image at specific points.",
+    "html": "The <strong><code>mask</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> hides an element (partially or fully) by masking or clipping the image at specific points."
+  },
+  {
+    "name": "max-height",
+    "definition": "The max-height CSS property sets the maximum height of an element. It prevents the used value of the height property from becoming larger than the value specified for max-height.",
+    "html": "The <strong><code>max-height</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the maximum height of an element. It prevents the <a href=\"/en-US/docs/Web/CSS/used_value\">used value</a> of the <a href=\"/en-US/docs/Web/CSS/height\"><code>height</code></a> property from becoming larger than the value specified for <code>max-height</code>."
+  },
+  {
+    "name": "max-width",
+    "definition": "The max-width CSS property sets the maximum width of an element. It prevents the used value of the width property from becoming larger than the value specified by max-width.",
+    "html": "The <strong><code>max-width</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the maximum width of an element. It prevents the <a href=\"/en-US/docs/Web/CSS/used_value\">used value</a> of the <a href=\"/en-US/docs/Web/CSS/width\"><code>width</code></a> property from becoming larger than the value specified by <code>max-width</code>."
+  },
+  {
+    "name": "min-height",
+    "definition": "The min-height CSS property sets the minimum height of an element. It prevents the used value of the height property from becoming smaller than the value specified for min-height.",
+    "html": "The <strong><code>min-height</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the minimum height of an element. It prevents the <a href=\"/en-US/docs/Web/CSS/used_value\">used value</a> of the <a href=\"/en-US/docs/Web/CSS/height\"><code>height</code></a> property from becoming smaller than the value specified for <code>min-height</code>."
+  },
+  {
+    "name": "min-width",
+    "definition": "The min-width CSS property sets the minimum width of an element. It prevents the used value of the width property from becoming smaller than the value specified for min-width.",
+    "html": "The <strong><code>min-width</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the minimum width of an element. It prevents the <a href=\"/en-US/docs/Web/CSS/used_value\">used value</a> of the <a href=\"/en-US/docs/Web/CSS/width\"><code>width</code></a> property from becoming smaller than the value specified for <code>min-width</code>."
+  },
+  {
+    "name": "mix-blend-mode",
+    "definition": "The mix-blend-mode CSS property sets how an element's content should blend with the content of the element's parent and the element's background.",
+    "html": "The <strong><code>mix-blend-mode</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets how an element's content should blend with the content of the element's parent and the element's background."
+  },
+  {
+    "name": "object-fit",
+    "definition": "The object-fit CSS property sets how the content of a replaced element, such as an <img> or <video>, should be resized to fit its container.",
+    "html": "The <strong><code>object-fit</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets how the content of a <a href=\"/en-US/docs/Web/CSS/Replaced_element\">replaced element</a>, such as an <a href=\"/en-US/docs/Web/HTML/Element/img\"><code>&lt;img&gt;</code></a> or <a href=\"/en-US/docs/Web/HTML/Element/video\"><code>&lt;video&gt;</code></a>, should be resized to fit its container."
+  },
+  {
+    "name": "object-position",
+    "definition": "The object-position CSS property specifies the alignment of the selected replaced element's contents within the element's box. Areas of the box which aren't covered by the replaced element's object will show the element's background.",
+    "html": "<span class=\"seoSummary\">The <strong><code>object-position</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property specifies the alignment of the selected <a href=\"/en-US/docs/Web/CSS/Replaced_element\">replaced element</a>'s contents within the element's box.</span> Areas of the box which aren't covered by the replaced element's object will show the element's background."
+  },
+  {
+    "name": "opacity",
+    "definition": "The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.",
+    "html": "The <strong><code>opacity</code></strong> CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency."
+  },
+  {
+    "name": "order",
+    "definition": "The order CSS property sets the order to lay out an item in a flex or grid container. Items in a container are sorted by ascending order value and then by their source code order.",
+    "html": "The <strong><code>order</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the order to lay out an item in a flex or grid container. Items in a container are sorted by ascending <code>order</code> value and then by their source code order."
+  },
+  {
+    "name": "orphans",
+    "definition": "The orphans CSS property sets the minimum number of lines in a block container that must be shown at the bottom of a page, region, or column.",
+    "html": "The <strong><code>orphans</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the minimum number of lines in a block container that must be shown at the <em>bottom</em> of a <a href=\"/en-US/docs/Web/CSS/Paged_Media\">page</a>, region, or <a href=\"/en-US/docs/Web/CSS/CSS_Columns\">column</a>."
+  },
+  {
+    "name": "outline-color",
+    "definition": "The outline-color CSS property sets the color of an element's outline.",
+    "html": "The <strong><code>outline-color</code></strong> CSS property sets the color of an element's outline."
+  },
+  {
+    "name": "outline-offset",
+    "definition": "The outline-offset CSS property sets the amount of space between an outline and the edge or border of an element.",
+    "html": "The <strong><code>outline-offset</code></strong> CSS property sets the amount of space between an <a href=\"/en-US/docs/Web/CSS/outline\">outline</a> and the edge or border of an element."
+  },
+  {
+    "name": "outline-style",
+    "definition": "The outline-style CSS property sets the style of an element's outline. An outline is a line that is drawn around an element, outside the border.",
+    "html": "The <strong><code>outline-style</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the style of an element's outline. An outline is a line that is drawn around an element, outside the <a href=\"/en-US/docs/Web/CSS/border\"><code>border</code></a>."
+  },
+  {
+    "name": "outline-width",
+    "definition": "The CSS outline-width property sets the thickness of an element's outline. An outline is a line that is drawn around an element, outside the border.",
+    "html": "The <a href=\"/en-US/docs/Web/CSS\">CSS</a> <strong><code>outline-width</code></strong> property sets the thickness of an element's outline. An outline is a line that is drawn around an element, outside the <a href=\"/en-US/docs/Web/CSS/border\"><code>border</code></a>."
+  },
+  {
+    "name": "outline",
+    "definition": "The outline CSS shorthand property set all the outline properties in a single declaration.",
+    "html": "The <strong><code>outline</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> set all the outline properties in a single declaration."
+  },
+  {
+    "name": "overflow-anchor",
+    "definition": "The overflow-anchor CSS property provides a way to opt out of the browser's scroll anchoring behavior, which adjusts scroll position to minimize content shifts.",
+    "html": "The <strong><code>overflow-anchor</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property provides a way to opt out of the browser's scroll anchoring behavior, which adjusts scroll position to minimize content shifts."
+  },
+  {
+    "name": "overflow-block",
+    "definition": "",
+    "html": ""
+  },
+  {
+    "name": "overflow-clip-margin",
+    "definition": "",
+    "html": ""
+  },
+  {
+    "name": "overflow-inline",
+    "definition": "The overflow-inline CSS property sets what shows when content overflows the inline start and end edges of a box. This may be nothing, a scroll bar, or the overflow content.",
+    "html": "The <strong><code>overflow-inline</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets what shows when content overflows the inline start and end edges of a box. This may be nothing, a scroll bar, or the overflow content."
+  },
+  {
+    "name": "overflow-wrap",
+    "definition": "The overflow-wrap CSS property applies to inline elements, setting whether the browser should insert line breaks within an otherwise unbreakable string to prevent text from overflowing its line box.",
+    "html": "The <code><strong>overflow-wrap</strong></code> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property applies to inline elements, setting whether the browser should insert line breaks within an otherwise unbreakable string to prevent text from overflowing its line box."
+  },
+  {
+    "name": "overflow-x",
+    "definition": "The overflow-x CSS property sets what shows when content overflows a block-level element's left and right edges. This may be nothing, a scroll bar, or the overflow content.",
+    "html": "The <strong><code>overflow-x</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets what shows when content overflows a block-level element's left and right edges. This may be nothing, a scroll bar, or the overflow content."
+  },
+  {
+    "name": "overflow-y",
+    "definition": "The overflow-y CSS property sets what shows when content overflows a block-level element's top and bottom edges. This may be nothing, a scroll bar, or the overflow content.",
+    "html": "The <strong><code>overflow-y</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets what shows when content overflows a block-level element's top and bottom edges. This may be nothing, a scroll bar, or the overflow content."
+  },
+  {
+    "name": "overflow",
+    "definition": "The overflow CSS shorthand property sets the desired behavior for an element's overflow — i.e. when an element's content is too big to fit in its block formatting context — in both directions.",
+    "html": "<span class=\"seoSummary\">The <strong><code>overflow</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> sets the desired behavior for an element's overflow — i.e. when an element's content is too big to fit in its <a href=\"/en-US/docs/Web/Guide/CSS/Block_formatting_context\">block formatting context</a> — in both directions.</span>"
+  },
+  {
+    "name": "overscroll-behavior-block",
+    "definition": "The overscroll-behavior-block CSS property sets the browser's behavior when the block direction boundary of a scrolling area is reached.",
+    "html": "<span class=\"seoSummary\">The <strong><code>overscroll-behavior-block</code></strong>&nbsp;CSS property sets the browser's behavior when the block direction&nbsp;boundary of a scrolling area is reached.</span>"
+  },
+  {
+    "name": "overscroll-behavior-inline",
+    "definition": "The overscroll-behavior-inline CSS property sets the browser's behavior when the inline direction boundary of a scrolling area is reached.",
+    "html": "<span class=\"seoSummary\">The <strong><code>overscroll-behavior-inline</code></strong>&nbsp;CSS property sets the browser's behavior when the inline&nbsp;direction&nbsp;boundary of a scrolling area is reached.</span>"
+  },
+  {
+    "name": "overscroll-behavior-x",
+    "definition": "The overscroll-behavior-x CSS property sets the browser's behavior when the horizontal boundary of a scrolling area is reached.",
+    "html": "<span class=\"seoSummary\">The <strong><code>overscroll-behavior-x</code></strong> CSS property sets the browser's behavior when the horizontal boundary of a scrolling area is reached.</span>"
+  },
+  {
+    "name": "overscroll-behavior-y",
+    "definition": "The overscroll-behavior-y CSS property sets the browser's behavior when the vertical boundary of a scrolling area is reached.",
+    "html": "<span class=\"seoSummary\">The <strong><code>overscroll-behavior-y</code></strong> CSS property sets the browser's behavior when the vertical boundary of a scrolling area is reached.</span>"
+  },
+  {
+    "name": "overscroll-behavior",
+    "definition": "The overscroll-behavior CSS property sets what a browser does when reaching the boundary of a scrolling area. It's a shorthand for overscroll-behavior-x and overscroll-behavior-y.",
+    "html": "<span class=\"seoSummary\">The <strong><code>overscroll-behavior</code></strong> CSS property sets what a browser does when reaching the boundary of a scrolling area. It's a shorthand for <a href=\"/en-US/docs/Web/CSS/overscroll-behavior-x\"><code>overscroll-behavior-x</code></a> and <a href=\"/en-US/docs/Web/CSS/overscroll-behavior-y\"><code>overscroll-behavior-y</code></a>.</span>"
+  },
+  {
+    "name": "padding-bottom",
+    "definition": "The padding-bottom CSS property sets the height of the padding area on the bottom of an element.",
+    "html": "The <strong><code>padding-bottom</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the height of the <a href=\"/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model#padding-area\">padding area</a> on the bottom of an element."
+  },
+  {
+    "name": "padding-left",
+    "definition": "The padding-left CSS property sets the width of the padding area to the left of an element.",
+    "html": "The <strong><code>padding-left</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the width of the <a href=\"/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model#padding-area\">padding area</a> to the left of an element."
+  },
+  {
+    "name": "padding-right",
+    "definition": "The padding-right CSS property sets the width of the padding area on the right of an element.",
+    "html": "The <strong><code>padding-right</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the width of the <a href=\"/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model#padding-area\">padding area</a> on the right of an element."
+  },
+  {
+    "name": "padding-top",
+    "definition": "The padding-top CSS property sets the height of the padding area on the top of an element.",
+    "html": "The <strong><code>padding-top</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the height of the <a href=\"/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model#padding-area\">padding area</a> on the top of an element."
+  },
+  {
+    "name": "padding",
+    "definition": "The padding CSS shorthand property sets the padding area on all four sides of an element at once.",
+    "html": "The <strong><code>padding</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> sets the <a href=\"/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model#padding-area\">padding area</a> on all four sides of an element at once."
+  },
+  {
+    "name": "page-break-after",
+    "definition": "The page-break-after CSS property adjusts page breaks after the current element.",
+    "html": "The <strong><code>page-break-after</code></strong> CSS property adjusts page breaks <em>after</em> the current element."
+  },
+  {
+    "name": "page-break-before",
+    "definition": "The page-break-before CSS property adjusts page breaks before the current element.",
+    "html": "The <strong><code>page-break-before</code></strong> CSS property adjusts page breaks <em>before</em> the current element."
+  },
+  {
+    "name": "page-break-inside",
+    "definition": "The page-break-inside CSS property adjusts page breaks inside the current element.",
+    "html": "The <strong><code>page-break-inside</code></strong> CSS property adjusts page breaks <em>inside</em> the current element."
+  },
+  {
+    "name": "perspective-origin",
+    "definition": "The perspective-origin CSS property determines the position at which the viewer is looking. It is used as the vanishing point by the perspective property.",
+    "html": "The <strong><code>perspective-origin</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property determines the position at which the viewer is looking. It is used as the <em>vanishing point</em> by the <a href=\"/en-US/docs/Web/CSS/perspective\"><code>perspective</code></a> property."
+  },
+  {
+    "name": "perspective",
+    "definition": "The perspective CSS property determines the distance between the z=0 plane and the user in order to give a 3D-positioned element some perspective.",
+    "html": "<span class=\"seoSummary\">The <strong><code>perspective</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property determines the distance between the z=0 plane and the user in order to give a 3D-positioned element some perspective.</span>"
+  },
+  {
+    "name": "place-content",
+    "definition": "The place-content CSS shorthand property allows you to align content along both the block and inline directions at once (i.e. the align-content and justify-content properties) in a relevant layout system such as Grid or Flexbox.",
+    "html": "The <code><strong>place-content</strong></code> <a href=\"/en-US/docs/Web/CSS\">CSS</a> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> allows you to align content along both the block and inline directions at once (i.e. the <a href=\"/en-US/docs/Web/CSS/align-content\"><code>align-content</code></a> and <a href=\"/en-US/docs/Web/CSS/justify-content\"><code>justify-content</code></a> properties) in a relevant layout system such as <a href=\"/en-US/docs/Web/CSS/CSS_Grid_Layout\">Grid</a> or <a href=\"/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout\">Flexbox</a>."
+  },
+  {
+    "name": "place-items",
+    "definition": "The CSS place-items shorthand property allows you to align items along both the block and inline directions at once (i.e. the align-items and justify-items properties) in a relevant layout system such as Grid or Flexbox. If the second value is not set, the first value is also used for it.",
+    "html": "The <a href=\"/en-US/docs/Web/CSS\">CSS</a> <strong><code>place-items</code></strong> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> allows you to align items along both the block and inline directions at once (i.e. the <a href=\"/en-US/docs/Web/CSS/align-items\"><code>align-items</code></a> and <a href=\"/en-US/docs/Web/CSS/justify-items\"><code>justify-items</code></a> properties) in a relevant layout system such as <a href=\"/en-US/docs/Web/CSS/CSS_Grid_Layout\">Grid</a> or <a href=\"/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout\">Flexbox</a>. If the second value is not set, the first value is also used for it."
+  },
+  {
+    "name": "place-self",
+    "definition": "The place-self CSS shorthand property allows you to align an individual item in both the block and inline directions at once (i.e. the align-self and justify-self properties) in a relevant layout system such as Grid or Flexbox. If the second value is not present, the first value is also used for it.",
+    "html": "The <strong><code>place-self</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> allows you to align an individual item in both the block and inline directions at once (i.e. the <a href=\"/en-US/docs/Web/CSS/align-self\"><code>align-self</code></a> and <a href=\"/en-US/docs/Web/CSS/justify-self\"><code>justify-self</code></a> properties) in a relevant layout system such as <a href=\"/en-US/docs/Web/CSS/CSS_Grid_Layout\">Grid</a> or <a href=\"/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout\">Flexbox</a>. If the second value is not present, the first value is also used for it."
+  },
+  {
+    "name": "pointer-events",
+    "definition": "The pointer-events CSS property sets under what circumstances (if any) a particular graphic element can become the target of pointer events.",
+    "html": "The <strong><code>pointer-events</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets under what circumstances (if any) a particular graphic element can become the <a href=\"/en-US/docs/Web/API/Event/target\">target</a> of pointer events."
+  },
+  {
+    "name": "position",
+    "definition": "The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.",
+    "html": "The <strong><code>position</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets how an element is positioned in a document. The <a href=\"/en-US/docs/Web/CSS/top\"><code>top</code></a>, <a href=\"/en-US/docs/Web/CSS/right\"><code>right</code></a>, <a href=\"/en-US/docs/Web/CSS/bottom\"><code>bottom</code></a>, and <a href=\"/en-US/docs/Web/CSS/left\"><code>left</code></a> properties determine the final location of positioned elements."
+  },
+  {
+    "name": "quotes",
+    "definition": "The quotes CSS property sets how the browser should render quotation marks that are added using the open-quotes or close-quotes values of the CSS content property.",
+    "html": "The <strong><code>quotes</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets how the browser should render quotation marks that are added using the <code>open-quotes</code> or <code>close-quotes</code> values of the CSS <code><a href=\"/en-US/docs/Web/CSS/content\">content</a></code> property."
+  },
+  {
+    "name": "resize",
+    "definition": "The resize CSS property sets whether an element is resizable, and if so, in which directions.",
+    "html": "The <strong><code>resize</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets whether an element is resizable, and if so, in which directions."
+  },
+  {
+    "name": "right",
+    "definition": "The right CSS property participates in specifying the horizontal position of a positioned element. It has no effect on non-positioned elements.",
+    "html": "The <strong><code>right</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property participates in specifying the horizontal position of a <a href=\"/en-US/docs/Web/CSS/position\">positioned element</a>. It has no effect on non-positioned elements."
+  },
+  {
+    "name": "rotate",
+    "definition": "The rotate CSS property allows you to specify rotation transforms individually and independently of the transform property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the transform property.",
+    "html": "The <strong><code>rotate</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property allows you to specify rotation transforms individually and independently of the <a href=\"/en-US/docs/Web/CSS/transform\"><code>transform</code></a> property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the <code>transform</code> property."
+  },
+  {
+    "name": "row-gap (grid-row-gap)",
+    "definition": "The row-gap CSS property sets the size of the gap (gutter) between an element's grid rows.",
+    "html": "The <strong><code>row-gap</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the size of the gap (<a href=\"/en-US/docs/Glossary/Gutters\">gutter</a>) between an element's grid rows."
+  },
+  {
+    "name": "ruby-align",
+    "definition": "The ruby-align CSS property defines the distribution of the different ruby elements over the base.",
+    "html": "The <code><strong>ruby-align</strong></code> CSS property defines the distribution of the different ruby elements over the base."
+  },
+  {
+    "name": "ruby-position",
+    "definition": "The ruby-position CSS property defines the position of a ruby element relatives to its base element. It can be positioned over the element (over), under it (under), or between the characters on their right side (inter-character).",
+    "html": "The <code><strong>ruby-position</strong></code> CSS property defines the position of a ruby element relatives to its base element. It can be positioned over the element (<code>over</code>), under it (<code>under</code>), or between the characters on their right side (<code>inter-character</code>)."
+  },
+  {
+    "name": "scale",
+    "definition": "The scale CSS property allows you to specify scale transforms individually and independently of the transform property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the transform value.",
+    "html": "The <strong><code>scale</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property allows you to specify scale transforms individually and independently of the <a href=\"/en-US/docs/Web/CSS/transform\"><code>transform</code></a> property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the <code>transform</code> value."
+  },
+  {
+    "name": "scroll-behavior",
+    "definition": "",
+    "html": ""
+  },
+  {
+    "name": "scroll-margin-bottom",
+    "definition": "The scroll-margin-bottom property defines the bottom margin of the scroll snap area that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets.",
+    "html": "The <code>scroll-margin-bottom</code> property defines the bottom margin of the scroll snap area that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets."
+  },
+  {
+    "name": "scroll-margin-inline-start",
+    "definition": "The scroll-margin-inline-start property defines the margin of the scroll snap area at the start of the inline dimension that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets.",
+    "html": "The <code>scroll-margin-inline-start</code> property defines the margin of the scroll snap area at the start of the inline dimension that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets."
+  },
+  {
+    "name": "scroll-margin-inline",
+    "definition": "The scroll-margin-inline shorthand property sets the scroll margins of an element in the inline dimension.",
+    "html": "The <code>scroll-margin-inline</code> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> sets the scroll margins of an element in the inline dimension."
+  },
+  {
+    "name": "scroll-margin-left",
+    "definition": "The scroll-margin-left property defines the left margin of the scroll snap area that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets.",
+    "html": "The <code>scroll-margin-left</code> property defines the left margin of the scroll snap area that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets."
+  },
+  {
+    "name": "scroll-margin-right",
+    "definition": "The scroll-margin-right property defines the right margin of the scroll snap area that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets.",
+    "html": "The <code>scroll-margin-right</code> property defines the right margin of the scroll snap area that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets."
+  },
+  {
+    "name": "scroll-margin-top",
+    "definition": "The scroll-margin-top property defines the top margin of the scroll snap area that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets.",
+    "html": "The <code>scroll-margin-top</code> property defines the top margin of the scroll snap area that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets."
+  },
+  {
+    "name": "scroll-padding-block-end",
+    "definition": "The scroll-padding-block-end property defines offsets for the end edge in the block dimension of the optimal viewing region of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or to put more breathing room between a targeted element and the edges of the scrollport.",
+    "html": "The <code>scroll-padding-block-end</code> property defines offsets for the end edge in the block dimension of the <dfn>optimal viewing region</dfn> of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or to put more breathing room between a targeted element and the edges of the scrollport."
+  },
+  {
+    "name": "scroll-padding-block-start",
+    "definition": "The scroll-padding-block-start property defines offsets for the start edge in the block dimension of the optimal viewing region of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or to put more breathing room between a targeted element and the edges of the scrollport.",
+    "html": "The <code>scroll-padding-block-start</code> property defines offsets for the start edge in the block dimension of the <dfn>optimal viewing region</dfn> of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or to put more breathing room between a targeted element and the edges of the scrollport."
+  },
+  {
+    "name": "scroll-padding-bottom",
+    "definition": "The scroll-padding-bottom property defines offsets for the bottom of the optimal viewing region of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or to put more breathing room between a targeted element and the edges of the scrollport.",
+    "html": "The <code>scroll-padding-bottom</code> property defines offsets for the bottom of the <dfn>optimal viewing region</dfn> of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or to put more breathing room between a targeted element and the edges of the scrollport."
+  },
+  {
+    "name": "scroll-padding-inline-end",
+    "definition": "The scroll-padding-inline-end property defines offsets for the end edge in the inline dimension of the optimal viewing region of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or to put more breathing room between a targeted element and the edges of the scrollport.",
+    "html": "The <code>scroll-padding-inline-end</code>&nbsp;property&nbsp;defines offsets for the end&nbsp;edge in the inline&nbsp;dimension&nbsp;of the&nbsp;<dfn>optimal viewing region</dfn>&nbsp;of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or to put more breathing room between a targeted element and the edges of the scrollport."
+  },
+  {
+    "name": "scroll-padding-inline-start",
+    "definition": "The scroll-padding-inline-start property defines offsets for the start edge in the inline dimension of the optimal viewing region of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or to put more breathing room between a targeted element and the edges of the scrollport.",
+    "html": "The <code>scroll-padding-inline-start</code> property defines offsets for the start edge in the inline dimension of the <dfn>optimal viewing region</dfn> of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or to put more breathing room between a targeted element and the edges of the scrollport."
+  },
+  {
+    "name": "scroll-padding-inline",
+    "definition": "The scroll-padding-inline shorthand property sets the scroll padding of an element in the inline dimension.",
+    "html": "The <code>scroll-padding-inline</code> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> sets the scroll padding of an element in the inline dimension."
+  },
+  {
+    "name": "scroll-padding-left",
+    "definition": "The scroll-padding-left property defines offsets for the left of the optimal viewing region of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or to put more breathing room between a targeted element and the edges of the scrollport.",
+    "html": "The <code>scroll-padding-left</code> property defines offsets for the left of the <dfn>optimal viewing region</dfn> of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or to put more breathing room between a targeted element and the edges of the scrollport."
+  },
+  {
+    "name": "scroll-padding",
+    "definition": "The scroll-padding shorthand property sets scroll padding on all sides of an element at once, much like the padding property does for padding on an element.",
+    "html": "The <strong><code>scroll-padding</code></strong> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> sets scroll padding on all sides of an element at once, much like the <a href=\"/en-US/docs/Web/CSS/padding\"><code>padding</code></a> property does for padding on an element."
+  },
+  {
+    "name": "scroll-snap-type",
+    "definition": "The scroll-snap-type CSS property sets how strictly snap points are enforced on the scroll container in case there is one.",
+    "html": "The <strong><code>scroll-snap-type</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets how strictly snap points are enforced on the scroll container in case there is one."
+  },
+  {
+    "name": "scrollbar-color",
+    "definition": "The scrollbar-color CSS property sets the color of the scrollbar track and thumb.",
+    "html": "<span class=\"seoSummary\">The <strong><code>scrollbar-color</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the color of the scrollbar track and thumb.</span>"
+  },
+  {
+    "name": "scrollbar-width",
+    "definition": "The scrollbar-width property allows the author to set the maximum thickness of an element’s scrollbars when they are shown.",
+    "html": "The <strong><code>scrollbar-width</code></strong> property allows the author to set the maximum thickness of an element’s scrollbars when they are shown."
+  },
+  {
+    "name": "shape-image-threshold",
+    "definition": "The shape-image-threshold CSS property sets the alpha channel threshold used to extract the shape using an image as the value for shape-outside.",
+    "html": "<span class=\"seoSummary\">The <strong><code>shape-image-threshold</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the alpha channel threshold used to extract the shape using an image as the value for <a href=\"/en-US/docs/Web/CSS/shape-outside\"><code>shape-outside</code></a>.</span>"
+  },
+  {
+    "name": "shape-margin",
+    "definition": "The shape-margin CSS property sets a margin for a CSS shape created using shape-outside.",
+    "html": "<span class=\"seoSummary\">The <strong><code>shape-margin</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets a margin for a CSS shape created using <a href=\"/en-US/docs/Web/CSS/shape-outside\"><code>shape-outside</code></a>.</span>"
+  },
+  {
+    "name": "shape-outside",
+    "definition": "The shape-outside CSS property defines a shape—which may be non-rectangular—around which adjacent inline content should wrap. By default, inline content wraps around its margin box; shape-outside provides a way to customize this wrapping, making it possible to wrap text around complex objects rather than simple boxes.",
+    "html": "<span class=\"seoSummary\">The <strong><code>shape-outside</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property defines a shape—which may be non-rectangular—around which adjacent inline content should wrap.</span> By default, inline content wraps around its margin box; <code>shape-outside</code> provides a way to customize this wrapping, making it possible to wrap text around complex objects rather than simple boxes."
+  },
+  {
+    "name": "tab-size",
+    "definition": "The tab-size CSS property is used to customize the width of tab characters (U+0009).",
+    "html": "<span class=\"seoSummary\">The <strong><code>tab-size</code></strong> CSS property is used to customize the width of tab characters (U+0009).</span>"
+  },
+  {
+    "name": "table-layout",
+    "definition": "The table-layout CSS property sets the algorithm used to lay out <table> cells, rows, and columns.",
+    "html": "The <strong><code>table-layout</code></strong> CSS property sets the algorithm used to lay out <a href=\"/en-US/docs/Web/HTML/Element/table\"><code>&lt;table&gt;</code></a> cells, rows, and columns."
+  },
+  {
+    "name": "text-align",
+    "definition": "The text-align CSS property sets the horizontal alignment of the content inside a block element or table-cell box. This means it works like vertical-align but in the horizontal direction.",
+    "html": "The <strong><code>text-align</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the horizontal alignment of the content inside a&nbsp;block element or table-cell box. This means it works like <a href=\"/en-US/docs/Web/CSS/vertical-align\"><code>vertical-align</code></a> but in the horizontal direction."
+  },
+  {
+    "name": "text-decoration-color",
+    "definition": "The text-decoration-color CSS property sets the color of decorations added to text by text-decoration-line.",
+    "html": "The <strong><code>text-decoration-color</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the color of decorations added to text by <a href=\"/en-US/docs/Web/CSS/text-decoration-line\"><code>text-decoration-line</code></a>."
+  },
+  {
+    "name": "text-decoration-line",
+    "definition": "The text-decoration-line CSS property sets the kind of decoration that is used on text in an element, such as an underline or overline.",
+    "html": "The <strong><code>text-decoration-line</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the kind of decoration that is used on text in an element, such as an underline or overline."
+  },
+  {
+    "name": "text-decoration-style",
+    "definition": "The text-decoration-style CSS property sets the style of the lines specified by text-decoration-line. The style applies to all lines that are set with text-decoration-line.",
+    "html": "The <strong><code>text-decoration-style</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the style of the lines specified by <a href=\"/en-US/docs/Web/CSS/text-decoration-line\"><code>text-decoration-line</code></a>. The style applies to all lines that are set with <code>text-decoration-line</code>."
+  },
+  {
+    "name": "text-decoration",
+    "definition": "The text-decoration shorthand CSS property sets the appearance of decorative lines on text. It is a shorthand for text-decoration-line, text-decoration-color, text-decoration-style, and the newer text-decoration-thickness property.",
+    "html": "<span class=\"seoSummary\">The <strong><code>text-decoration</code></strong> <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand</a> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the appearance of decorative lines on text.</span> It is a shorthand for <a href=\"/en-US/docs/Web/CSS/text-decoration-line\"><code>text-decoration-line</code></a>, <a href=\"/en-US/docs/Web/CSS/text-decoration-color\"><code>text-decoration-color</code></a>, <a href=\"/en-US/docs/Web/CSS/text-decoration-style\"><code>text-decoration-style</code></a>, and the newer <a href=\"/en-US/docs/Web/CSS/text-decoration-thickness\"><code>text-decoration-thickness</code></a> property."
+  },
+  {
+    "name": "text-emphasis-color",
+    "definition": "The text-emphasis-color CSS property sets the color of emphasis marks. This value can also be set using the text-emphasis shorthand.",
+    "html": "<span class=\"seoSummary\">The <strong><code>text-emphasis-color</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the color of emphasis marks. This value can also be set using the <a href=\"/en-US/docs/Web/CSS/text-emphasis\"><code>text-emphasis</code></a> shorthand.</span>"
+  },
+  {
+    "name": "text-emphasis-position",
+    "definition": "The text-emphasis-position CSS property sets where emphasis marks are drawn. Like ruby text, if there isn't enough room for emphasis marks, the line height is increased.",
+    "html": "The <strong><code>text-emphasis-position</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets where emphasis marks are drawn. Like ruby text, if there isn't enough room for emphasis marks, the line height is increased."
+  },
+  {
+    "name": "text-emphasis-style",
+    "definition": "The text-emphasis-style CSS property sets the appearance of emphasis marks. It can also be set, and reset, using the text-emphasis shorthand.",
+    "html": "The <strong><code>text-emphasis-style</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the appearance of emphasis marks. It can also be set, and reset, using the <a href=\"/en-US/docs/Web/CSS/text-emphasis\"><code>text-emphasis</code></a> shorthand."
+  },
+  {
+    "name": "text-emphasis",
+    "definition": "The text-emphasis CSS property applies emphasis marks to text (except spaces and control characters). It is a shorthand for text-emphasis-style and text-emphasis-color.",
+    "html": "The <strong><code>text-emphasis</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property applies emphasis marks to text (except spaces and control characters). It is a <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand</a> for <a href=\"/en-US/docs/Web/CSS/text-emphasis-style\"><code>text-emphasis-style</code></a> and <a href=\"/en-US/docs/Web/CSS/text-emphasis-color\"><code>text-emphasis-color</code></a>."
+  },
+  {
+    "name": "text-indent",
+    "definition": "The text-indent CSS property sets the length of empty space (indentation) that is put before lines of text in a block.",
+    "html": "The <strong><code>text-indent</code></strong> CSS property sets the length of empty space (indentation) that is put before lines of text in a block."
+  },
+  {
+    "name": "text-justify",
+    "definition": "The text-justify CSS property sets what type of justification should be applied to text when text-align: justify; is set on an element.",
+    "html": "The <strong><code>text-justify</code></strong> CSS property sets what type of justification should be applied to text when <a href=\"/en-US/docs/Web/CSS/text-align\"><code>text-align</code></a><code>: justify;</code> is set on an element."
+  },
+  {
+    "name": "text-orientation",
+    "definition": "The text-orientation CSS property sets the orientation of the text characters in a line. It only affects text in vertical mode (when writing-mode is not horizontal-tb). It is useful for controlling the display of languages that use vertical script, and also for making vertical table headers.",
+    "html": "<span class=\"seoSummary\">The <strong><code>text-orientation</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the orientation of the text characters in a line. It only affects text in vertical mode (when <a href=\"/en-US/docs/Web/CSS/writing-mode\"><code>writing-mode</code></a> is not <code>horizontal-tb</code>).</span> It is useful for controlling the display of languages that use vertical script, and also for making vertical table headers."
+  },
+  {
+    "name": "text-overflow",
+    "definition": "",
+    "html": ""
+  },
+  {
+    "name": "text-rendering",
+    "definition": "The text-rendering CSS property provides information to the rendering engine about what to optimize for when rendering text.",
+    "html": "<span class=\"seoSummary\">The <strong><code>text-rendering</code></strong> CSS property provides information to the rendering engine about what to optimize for when rendering text.</span>"
+  },
+  {
+    "name": "text-shadow",
+    "definition": "The text-shadow CSS property adds shadows to text. It accepts a comma-separated list of shadows to be applied to the text and any of its decorations. Each shadow is described by some combination of X and Y offsets from the element, blur radius, and color.",
+    "html": "<span class=\"seoSummary\">The <strong><code>text-shadow</code></strong> CSS property adds shadows to text. It accepts a comma-separated list of shadows to be applied to the text and any of its <code><a href=\"/en-US/docs/Web/CSS/text-decoration\">decorations</a></code>.</span> Each shadow is described by some combination of X and Y offsets from the element, blur radius, and color."
+  },
+  {
+    "name": "text-transform",
+    "definition": "The text-transform CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. It also can help improve legibility for ruby.",
+    "html": "The <strong><code>text-transform</code></strong> CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. It also can help improve legibility for ruby."
+  },
+  {
+    "name": "text-underline-position",
+    "definition": "The text-underline-position CSS property specifies the position of the underline which is set using the text-decoration property's underline value.",
+    "html": "The <strong><code>text-underline-position</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS </a>property specifies the position of the underline which is set using the <a href=\"/en-US/docs/Web/CSS/text-decoration\"><code>text-decoration</code></a> property's <code>underline</code> value."
+  },
+  {
+    "name": "top",
+    "definition": "The top CSS property participates in specifying the vertical position of a positioned element. It has no effect on non-positioned elements.",
+    "html": "The <strong><code>top</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property participates in specifying the vertical position of a <a href=\"/en-US/docs/Web/CSS/position\">positioned element</a>. It has no effect on non-positioned elements."
+  },
+  {
+    "name": "touch-action",
+    "definition": "",
+    "html": ""
+  },
+  {
+    "name": "transform-origin",
+    "definition": "The transform-origin CSS property sets the origin for an element's transformations.",
+    "html": "The <strong><code>transform-origin</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the origin for an element's transformations."
+  },
+  {
+    "name": "transform",
+    "definition": "The transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.",
+    "html": "The <strong><code>transform</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS <a href=\"/en-US/docs/Web/CSS/Visual_formatting_model\">visual formatting model</a>."
+  },
+  {
+    "name": "transition-delay",
+    "definition": "The transition-delay CSS property specifies the duration to wait before starting a property's transition effect when its value changes.",
+    "html": "The <strong><code>transition-delay</code></strong> CSS property specifies the duration to wait before starting a property's <a href=\"/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions\">transition effect</a> when its value changes."
+  },
+  {
+    "name": "transition-duration",
+    "definition": "The transition-duration CSS property sets the length of time a transition animation should take to complete. By default, the value is 0s, meaning that no animation will occur.",
+    "html": "The <strong><code>transition-duration</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the length of time a transition animation should take to complete. By default, the value is <code>0s</code>, meaning that no animation will occur."
+  },
+  {
+    "name": "transition-property",
+    "definition": "The transition-property CSS property sets the CSS properties to which a transition effect should be applied.",
+    "html": "The <strong><code>transition-property</code> </strong><a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the CSS properties to which a <a href=\"/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions\">transition effect</a> should be applied."
+  },
+  {
+    "name": "transition-timing-function",
+    "definition": "The transition-timing-function CSS property sets how intermediate values are calculated for CSS properties being affected by a transition effect.",
+    "html": "The <strong><code>transition-timing-function</code></strong> CSS property sets how intermediate values are calculated for CSS properties being affected by a <a href=\"/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions\">transition effect</a>."
+  },
+  {
+    "name": "transition",
+    "definition": "The transition CSS property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay.",
+    "html": "The <strong><code>transition</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS </a>property is a <a href=\"/en-US/docs/Web/CSS/Shorthand_properties\">shorthand property</a> for <a href=\"/en-US/docs/Web/CSS/transition-property\"><code>transition-property</code></a>, <a href=\"/en-US/docs/Web/CSS/transition-duration\"><code>transition-duration</code></a>, <a href=\"/en-US/docs/Web/CSS/transition-timing-function\"><code>transition-timing-function</code></a>, and <a href=\"/en-US/docs/Web/CSS/transition-delay\"><code>transition-delay</code></a>."
+  },
+  {
+    "name": "translate",
+    "definition": "The translate CSS property allows you to specify translation transforms individually and independently of the transform property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the transform value.",
+    "html": "The <strong><code>translate</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property allows you to specify translation transforms individually and independently of the <a href=\"/en-US/docs/Web/CSS/transform\"><code>transform</code></a> property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the <code>transform</code> value."
+  },
+  {
+    "name": "unicode-bidi",
+    "definition": "The unicode-bidi CSS property, together with the direction property, determines how bidirectional text in a document is handled. For example, if a block of content contains both left-to-right and right-to-left text, the user-agent uses a complex Unicode algorithm to decide how to display the text. The unicode-bidi property overrides this algorithm and allows the developer to control the text embedding.",
+    "html": "The <strong><code>unicode-bidi</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property, together with the <a href=\"/en-US/docs/Web/CSS/direction\"><code>direction</code></a> property, determines how bidirectional text in a document is handled. For example, if a block of content contains both left-to-right and right-to-left text, the user-agent uses a complex Unicode algorithm to decide how to display the text. The <code>unicode-bidi</code> property overrides this algorithm and allows the developer to control the text embedding."
+  },
+  {
+    "name": "user-select",
+    "definition": "The user-select CSS property controls whether the user can select text. This doesn't have any effect on content loaded as part of a browser's user interface (its chrome), except in textboxes.",
+    "html": "The <code><strong>user-select</strong></code> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property controls whether the user can select text. This doesn't have any effect on content loaded as part of a browser's user interface (its <a href=\"/en-US/docs/Glossary/Chrome\">chrome</a>), except in textboxes."
+  },
+  {
+    "name": "vertical-align",
+    "definition": "The vertical-align CSS property sets vertical alignment of an inline, inline-block or table-cell box.",
+    "html": "The <strong><code>vertical-align</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets vertical alignment of an inline, inline-block or table-cell box."
+  },
+  {
+    "name": "visibility",
+    "definition": "The visibility CSS property shows or hides an element without changing the layout of a document. The property can also hide rows or columns in a <table>.",
+    "html": "The <strong><code>visibility</code></strong> CSS property shows or hides an element without changing the layout of a document. The property can also hide rows or columns in a <a href=\"/en-US/docs/Web/HTML/Element/table\"><code>&lt;table&gt;</code></a>."
+  },
+  {
+    "name": "white-space",
+    "definition": "The white-space CSS property sets how white space inside an element is handled.",
+    "html": "The <strong><code>white-space</code></strong> CSS property sets how <a href=\"/en-US/docs/Glossary/Whitespace\">white space</a> inside an element is handled."
+  },
+  {
+    "name": "widows",
+    "definition": "The widows CSS property sets the minimum number of lines in a block container that must be shown at the top of a page, region, or column.",
+    "html": "The <strong><code>widows</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the minimum number of lines in a block container that must be shown at the <em>top</em> of a <a href=\"/en-US/docs/Web/CSS/Paged_Media\">page</a>, region, or <a href=\"/en-US/docs/Web/CSS/CSS_Columns\">column</a>."
+  },
+  {
+    "name": "width",
+    "definition": "",
+    "html": ""
+  },
+  {
+    "name": "will-change",
+    "definition": "The will-change CSS property hints to browsers how an element is expected to change. Browsers may set up optimizations before an element is actually changed. These kinds of optimizations can increase the responsiveness of a page by doing potentially expensive work before they are actually required.",
+    "html": "<span class=\"seoSummary\">The <strong><code>will-change</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property hints to browsers how an element is expected to change. Browsers may set up optimizations before an element is actually changed.</span> These kinds of optimizations can increase the responsiveness of a page by doing potentially expensive work before they are actually required."
+  },
+  {
+    "name": "word-break",
+    "definition": "The word-break CSS property sets whether line breaks appear wherever the text would otherwise overflow its content box.",
+    "html": "The <strong><code>word-break</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets whether line breaks appear wherever the text would otherwise overflow its content box."
+  },
+  {
+    "name": "word-spacing",
+    "definition": "The word-spacing CSS property sets the length of space between words and between tags.",
+    "html": "The <strong><code>word-spacing</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets the length of space between words and between tags."
+  },
+  {
+    "name": "writing-mode",
+    "definition": "The writing-mode CSS property sets whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress. When set for an entire document, it should be set on the root element (html element for HTML documents).",
+    "html": "The <strong><code>writing-mode</code></strong> <a href=\"/en-US/docs/Web/CSS\">CSS</a> property sets whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress. When set for an entire document, it should be set on the root element (<code>html</code> element for HTML documents)."
+  },
+  {
+    "name": "z-index",
+    "definition": "The z-index CSS property sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one.",
+    "html": "The <strong><code>z-index</code></strong> CSS property sets the z-order of a <a href=\"/en-US/docs/Web/CSS/position\">positioned</a> element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one."
+  }
+]
