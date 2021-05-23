@@ -34,7 +34,12 @@ BFC（块级格式化上下文）：若干line-box和block-level-box（因高度
 
 #### 行内排布
 
-了解**字形**概念
+字符就是一个码点，具体的形状是由字体来决定的，**字形**相关概念：
+
+- orgin表示的就是文字的基线的位置
+- 文字宽度为 xMax - xMin，高度为 yMax - yMin
+- bearingX决定了默认字间距
+- 排版时一个字占用的空间叫advance，为字体的宽度和字间距之和
 
 ##### 行模型
 
@@ -97,11 +102,39 @@ clear: unset;
 >
 > 要被清除的相关浮动元素指的是在相同[块级格式化上下文](https://developer.mozilla.org/en-US/docs/CSS/block_formatting_context)中的前置浮动。
 
-clear实际作用于float元素时可以理解为为float元素找一个不会与前后其他float元素发生float堆叠的空间，依次可以进行float元素的换行。
+clear实际作用于float元素时可以理解为为float元素找一个不会与前后其他float元素发生float堆叠的空间，依此可以进行float元素的换行。
 
-对于
+##### 外边距折叠现象
 
+盒的margin，代表盒content周围留有的空白范围，而非与其他盒外边距的距离
 
+此现象只会出现在正常流的BFC中，不存在IFC，Flex，Grid中
+
+##### 设立BFC
+
+发生的情况有： 
+
+1. floats 浮动元素内部
+2. absolutely positioned elements 绝对定位的元素内部
+3. block container that are not block boxes 不是块级盒子的block container 比如：
+   - inline-block
+   - table-cells
+   - table-captions
+   - flex items（css3 new）
+   - grid cell（css3 new）
+   - ...
+4. and block boxes with 'overflow' other than 'visible' 块级盒子设置了overflow属性不为visible
+
+##### BFC合并 
+
+默认能容纳正常流的盒（也就是内部不是只能放特定display的元素的盒），我们都认为它会创建BFC，但是只有一种情况例外，就是块级盒子，它里面盒外面都是BFC并且overflow:visible的时候，就会产生内外的BFC合并
+
+发生BFC合并的条件： block box && overflow:visible
+
+- BFC合并与float
+- BFC合并与边距折叠
+
+BFC合并，可视为未创建BFC
 
 ## CSS动画
 
