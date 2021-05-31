@@ -1,0 +1,193 @@
+<script>
+let names = Object.getOwnPropertyNames(window);
+
+function filterOut(names,props) {
+    let set = new Set();
+    props.forEach(o => set.add(o));
+    return names.filter(e => !set.has(e));
+}
+
+//ECMA 262
+{ 
+    let js = new Set();
+    let objects = ["globalThis", "console", "BigInt", "BigInt64Array", "BigUint64Array", "Infinity", "NaN", "undefined", "eval", "isFinite", "isNaN", "parseFloat", "parseInt", "decodeURI", "decodeURIComponent", "encodeURI", "encodeURIComponent", "Array", "Date", "RegExp", "Promise", "Proxy", "Map", "WeakMap", "Set", "WeakSet", "Function", "Boolean", "String", "Number", "Symbol", "Object", "Error", "EvalError", "RangeError", "ReferenceError", "SyntaxError", "TypeError", "URIError", "ArrayBuffer", "SharedArrayBuffer", "DataView", "Float32Array", "Float64Array", "Int8Array", "Int16Array", "Int32Array", "Uint8Array", "Uint16Array", "Uint32Array", "Uint8ClampedArray", "Atomics", "JSON", "Math", "Reflect", "escape", "unescape"];
+    objects.forEach(o => js.add(o));
+    names=names.filter(e => !js.has(e))
+}
+
+// DOM API的节点部分
+names = names.filter( e => {
+    try {
+        return !(window[e].prototype instanceof Node);
+    } catch (err) {
+        return true;
+    }
+}).filter(e => e != "Node");
+
+//事件都以on开头
+names = names.filter( e => !e.match(/^on/));
+
+//webkit私有API
+names = names.filter(e => !e.match(/^webkit/));
+
+//https://html.spec.whatwg.org/#window
+{
+    let js = new Set();
+    let objects = ["BigInt", "BigInt64Array", "BigUint64Array", "Infinity", "NaN", "undefined", "eval", "isFinite", "isNaN", "parseFloat", "parseInt", "decodeURI", "decodeURIComponent", "encodeURI", "encodeURIComponent", "Array", "Date", "RegExp", "Promise", "Proxy", "Map", "WeakMap", "Set", "WeakSet", "Function", "Boolean", "String", "Number", "Symbol", "Object", "Error", "EvalError", "RangeError", "ReferenceError", "SyntaxError", "TypeError", "URIError", "ArrayBuffer", "SharedArrayBuffer", "DataView", "Float32Array", "Float64Array", "Int8Array", "Int16Array", "Int32Array", "Uint8Array", "Uint16Array", "Uint32Array", "Uint8ClampedArray", "Atomics", "JSON", "Math", "Reflect", "escape", "unescape"];
+    objects.forEach(o => js.add(o));
+    names = names.filter(e => !js.has(e));
+    
+    names = names.filter( e => {
+        try { 
+            return !(window[e].prototype instanceof Node)
+        } catch(err) {
+            return true;
+        }
+    }).filter( e => e != "Node");
+
+    let windowprops = new Set();
+    objects = ["window", "self", "document", "name", "location", "history", "customElements", "locationbar", "menubar", " personalbar", "scrollbars", "statusbar", "toolbar", "status", "close", "closed", "stop", "focus", " blur", "frames", "length", "top", "opener", "parent", "frameElement", "open", "navigator", "applicationCache", "alert", "confirm", "prompt", "print", "postMessage", "console","sessionStorage","localStorage"];
+    objects.forEach(o => windowprops.add(o));
+    names = names.filter(e => !windowprops.has(e));
+}
+
+//ECMA中的内容，有子属性后续可研究
+//http://www.ecma-international.org/ecma-402/5.0/index.html#Title
+names = names.filter(e => e != "Intl")
+
+//https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.15
+names = filterOut(names, ["WebGLVertexArrayObject","WebGLTransformFeedback","WebGLSync","WebGLSampler","WebGLQuery","WebGL2RenderingContext","WebGLContextEvent","WebGLObject", "WebGLBuffer", "WebGLFramebuffer", "WebGLProgram", "WebGLRenderbuffer", "WebGLShader", "WebGLTexture", "WebGLUniformLocation", "WebGLActiveInfo", "WebGLShaderPrecisionFormat", "WebGLRenderingContext"]);
+
+//声音相关
+//https://www.w3.org/TR/webaudio/
+
+names = filterOut(names, ["AudioContext", "AudioNode", "AnalyserNode", "AudioBuffer", "AudioBufferSourceNode", "AudioDestinationNode", "AudioParam", "AudioListener", "AudioWorklet", "AudioWorkletGlobalScope", "AudioWorkletNode", "AudioWorkletProcessor", "BiquadFilterNode", "ChannelMergerNode", "ChannelSplitterNode", "ConstantSourceNode", "ConvolverNode", "DelayNode", "DynamicsCompressorNode", "GainNode", "IIRFilterNode", "MediaElementAudioSourceNode", "MediaStreamAudioSourceNode", "MediaStreamTrackAudioSourceNode", "MediaStreamAudioDestinationNode", "PannerNode", "PeriodicWave", "OscillatorNode", "StereoPannerNode", "WaveShaperNode", "ScriptProcessorNode", "AudioProcessingEvent"]);
+
+//https://encoding.spec.whatwg.org/#dom-textencoder
+names = filterOut(names, ["TextDecoder", "TextEncoder", "TextDecoderStream", "TextEncoderStream"]);
+
+//https://streams.spec.whatwg.org/#blqs-class
+names = filterOut(names, ["ReadableStream", "ReadableStreamDefaultReader", "ReadableStreamBYOBReader", "ReadableStreamDefaultController", "ReadableByteStreamController", "ReadableStreamBYOBRequest", "WritableStream", "WritableStreamDefaultWriter", "WritableStreamDefaultController", "TransformStream", "TransformStreamDefaultController", "ByteLengthQueuingStrategy", "CountQueuingStrategy"]);
+
+//静默同步
+//https://wicg.github.io/BackgroundSync/spec/#sync-manager-interface
+names = filterOut(names, ["SyncManager"]);
+
+//whatwg
+//compat
+// https://drafts.fxtf.org/geometry-1/#webkitcssmatrix
+names = filterOut(names, ["WebKitCSSMatrix"]);
+
+// https://w3c.github.io/screen-orientation/#screenorientation-interface
+names = filterOut(names, ["Screen","ScreenOrientation",""]);
+
+//console
+
+//encoding
+// https://encoding.spec.whatwg.org/#interface-mixin-textdecodercommon
+names = filterOut(names, ["TextDecoderCommon","TextDecoder","TextEncoderCommon","TextEncoder","TextDecoderStream","TextEncoderStream"]);
+
+// streams
+//https://streams.spec.whatwg.org/#blqs-class
+names = filterOut(names, ["ReadableStream", "ReadableStreamDefaultReader", "ReadableStreamBYOBReader", "ReadableStreamDefaultController", "ReadableByteStreamController", "ReadableStreamBYOBRequest", "WritableStream", "WritableStreamDefaultWriter", "WritableStreamDefaultController", "TransformStream", "TransformStreamDefaultController", "ByteLengthQueuingStrategy", "CountQueuingStrategy"]);
+
+//https://fetch.spec.whatwg.org/
+names = filterOut(names, ["URL","XMLHttpRequest","WebSocket"]);
+
+// https://xhr.spec.whatwg.org/
+names = filterOut(names, ["FormData","ProgressEvent","ProgressEvent","ProgressEvent","XMLHttpRequest","XMLHttpRequestUpload","XMLHttpRequestEventTarget","XMLSerializer"]);
+
+// https://url.spec.whatwg.org
+names = filterOut(names, ["URLSearchParams","URL"]);
+// html
+// https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#the-htmlallcollection-interface
+names = filterOut(names, ["HTMLAllCollection","HTMLFormControlsCollection","HTMLOptionsCollection"]);
+
+// https://html.spec.whatwg.org/multipage/media.html#the-trackevent-interface
+names = filterOut(names, ["TrackEvent"]);
+
+// https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#the-domstringlist-interface
+names = filterOut(names, ["DocumentOrShadowRoot","DOMStringList"]);
+
+names = filterOut(names, ["SubmitEvent","FormDataEvent"]);
+
+// https://html.spec.whatwg.org/multipage/canvas.html#the-imagebitmaprenderingcontext-interface
+names = filterOut(names, ["ImageBitmapRenderingContext"]);
+
+// https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface
+names = filterOut(names, ["OffscreenCanvas"]);
+
+// https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api
+names = filterOut(names, ["CustomElementRegistry"]); 
+
+// https://html.spec.whatwg.org/multipage/custom-elements.html#the-elementinternals-interface
+names = filterOut(names, ["ElementInternals"]);
+
+// https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface
+names = filterOut(names, ["DataTransfer","DataTransferItemList","DataTransferItem"]);
+
+// https://html.spec.whatwg.org/multipage/dnd.html#the-dragevent-interface
+names = filterOut(names, ["DragEvent","History","Storage","StorageEvent","WorkerLocation","WorkerNavigator","SharedWorker","Worker","SharedWorkerGlobalScope","DedicatedWorkerGlobalScope","WorkerGlobalScope","CloseEvent","WebSocket"]);
+
+//dom
+// https://dom.spec.whatwg.org/#events
+names = filterOut(names, ["EventTarget","Window","addEventListener","removeEventListener","CustomEvent","dispatchEvent","Event","TouchEvent"]);
+
+// https://dom.spec.whatwg.org/#aborting-ongoing-activities
+names = filterOut(names, ["AbortController","AbortSignal"]);
+
+//https://dom.spec.whatwg.org/#interface-mutationobserver
+names = filterOut(names, ["WebKitMutationObserver"]);
+
+// https://dom.spec.whatwg.org/#nodes
+names = filterOut(names, ["Document","DocumentFragment","DocumentType","Text","ProcessingInstruction","Element","CharacterData","Comment","NodeList","HTMLCollection","MutationObserver", "MutationRecord","NamedNodeMap","Attr", "CDATASection"]);
+
+// https://dom.spec.whatwg.org/#interface-shadowroot
+names = filterOut(names, ["ShadowRoot"]);
+
+// https://dom.spec.whatwg.org/#ranges
+names = filterOut(names, ["StaticRange","Range","AbstractRange"]);
+
+// https://dom.spec.whatwg.org/#traversal
+names = filterOut(names, ["NodeIterator","TreeWalker","NodeFilter"]);
+
+// https://dom.spec.whatwg.org/#sets
+names = filterOut(names, ["DOMTokenList"]);
+
+// https://dom.spec.whatwg.org/#xpath
+names = filterOut(names, ["XPathResult","XPathExpression","XPathEvaluator"]);
+
+// https://dom.spec.whatwg.org/#xslt
+names = filterOut(names, ["XSLTProcessor"]);
+
+//css
+// https://drafts.csswg.org/cssom-view/
+names = filterOut(names, ["scrollByPages", "scrollByLines", "scrollBy", "scroll", "scrollLeft", "scrollTop"]);
+
+//https://drafts.css-houdini.org/css-typed-om-1/
+names = names.filter( e => !e.match(/^CSS/));
+
+// https://www.w3.org/TR/IndexedDB/
+names = names.filter(e => !e.match(/^IDB/));
+
+// https://www.w3.org/TR/SVG11/types.html
+names = names.filter( e => !e.match(/^SVG/));
+
+// https://immersive-web.github.io/webxr/
+names = names.filter(e => !e.match(/^XR/));
+
+// https://webaudio.github.io/web-midi-api/
+names = names.filter(e => !e.match(/^MIDI/));
+
+ //https://wicg.github.io/webusb/
+ names = names.filter(e => !e.match(/^USB/));
+
+// https://w3c.github.io/webrtc-pc/
+names = names.filter( e => !e.match(/^RTC/));
+
+// https://heycam.github.io/webidl/#aborterror
+names = filterOut(names, ["IndexSizeError", "HierarchyRequestError", "WrongDocumentError", "InvalidCharacterError", "NoModificationAllowedError", "NotFoundError","NotSupportedError","InUseAttributeError","InvalidStateError","SyntaxError"]);
+
+console.log(names);
+
+</script>
