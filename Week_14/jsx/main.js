@@ -60,25 +60,25 @@ class Carousel extends Component{
         })
 
 
-        let currentIndex = 0;
-        setInterval(() => {
-            let children = this.root.children;
-            let nextIndex = (currentIndex+1) % children.length;
+//         let currentIndex = 0;
+//         setInterval(() => {
+//             let children = this.root.children;
+//             let nextIndex = (currentIndex+1) % children.length;
 
-            let current = children[currentIndex];
-            let next = children[nextIndex];
+//             let current = children[currentIndex];
+//             let next = children[nextIndex];
 
-            next.style.transition = 'none';
-            next.style.transform=`translateX(${100-nextIndex*100}%)`;
+//             next.style.transition = 'none';
+//             next.style.transform=`translateX(${100-nextIndex*100}%)`;
             
-            setTimeout(() => {
-                next.style.transition = '';
-                current.style.transform = `translateX(${-100 - currentIndex * 100}%)`;
-                next.style.transform = `translateX(${- nextIndex * 100}%)`;
+//             setTimeout(() => {
+//                 next.style.transition = '';
+//                 current.style.transform = `translateX(${-100 - currentIndex * 100}%)`;
+//                 next.style.transform = `translateX(${- nextIndex * 100}%)`;
                 
-                currentIndex = nextIndex;
-            },16)
-        },3000)
+//                 currentIndex = nextIndex;
+//             },16)
+//         },3000)
 
         return this.root;
     }
