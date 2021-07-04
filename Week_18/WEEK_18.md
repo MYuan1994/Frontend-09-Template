@@ -101,7 +101,7 @@ nyc与babel互相加插件
 
 - nyc安装问题：按照课程中使用`--save-dev`安装的nyc，在命令行使用nyc时，可能会出现下图错误（或因Windows的vscode创建了工作区才有，未验证），需要在环境变量中添加安装的路径到path，或者使用全局安装nyc。
 
-  ![](.\img\nyc_error.png)
+  ![](./img/nyc_error.png)
 
 - nyc的代码覆盖率统计结果中，行覆盖率较为重要
 
